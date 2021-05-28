@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jim Guide Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+<!--menu js-->
+<script type="text/javascript" src="js/flexy-menu.js"></script>
+<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400, indicator: true});});</script>
+<!--//menu js-->
+</head>
+<body>
+	<!--banner-->
+	<div class="banner">	
+		<script src="js/responsiveslides.min.js"></script>
+		<script>  
+			$(function () {
+			  $("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			  });
+			});
+		  </script>
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">Jim <span>Guide</span></a>
+				</div>								 
+				<div class="top-nav">						
+					<ul class="flexy-menu orange nav1">
+						<li><a href="index.html">Home</a></li>						
+						<li><a href="#">About</a>
+							<ul>
+								<li><a href="about.html">Lorem1</a></li>
+								<li><a href="about.html">Lorem2</a></li>
+								<li><a href="about.html">Lorem3</a></li>
+								<li><a href="about.html">Lorem4</a></li>
+							</ul>
+						</li> 
+						<li><a href="services.html">Services</a></li>
+						<li><a class="active" href="#">Gallery</a>
+							<ul>
+								<li><a href="gallery.html">Gallery 1</a></li>
+								<li><a href="gallery.html">Gallery 2</a></li>
+								<li><a href="gallery.html">Gallery 3</a></li>
+							 </ul>
+						</li>               
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>	 
+		<div class="slider">
+			<div class="caption">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li><h1>TECHNIQUE <br>MUSCLE</h1></li>	
+						<li><h1>LORIPSUM <br>LETTERS</h1></li>
+						<li><h1>VEROACCUS<br>DUCIMUS</h1></li>
+					</ul>	
+					<h4>' lorem ipsum ' will uncover many</h4>
+					<a class="readmore" href="#">MORE</a>
+				</div>
+			</div>
+		</div>			 
+	</div>
+	<!--//banner-->
+	<!--gallery-->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<h3>Gallery</h3>
+			<div class="gallery-bottom">
+				<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="single.html" data-largesrc="images/img1.jpg" data-title="Mauris accumsan" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img1.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img12.jpg" data-title="Vivamus mauris" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img12.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img13.jpg" data-title="Aliquam fringilla"  data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img13.jpg" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img14.jpg" data-title="Nam lacinia"  data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img14.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img15.jpg" data-title="Integer laoreet"  data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img15.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img16.jpg" data-title="Quisque feugiat"  data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img16.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img17.jpg" data-title="Aliquam eget"  data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img17.jpg" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img18.jpg" data-title="Nullam ligula" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img18.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="single.html" data-largesrc="images/img19.jpg" data-title="Nullam ligula" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
+							<img class="img-responsive" src="images/img19.jpg" alt="img01"/>
+						</a>
+					</li>					 
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+			<!--end-gallery js-->
+			<script src="js/grid.js"></script>
+				<script>
+					$(function() {
+						Grid.init();
+					});
+				</script>
+			<!--//end-gallery-->
+		</div>	
+	</div>
+	<!--gallery-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="https://www.webmoban.net" target="_blank" title="网站模板">网站模板</a> - Collect from <a href="https://www.webmoban.net" title="网页模板" target="_blank">网页模板</a></p>
+		</div>
+	</div>
+	<!--//footer-->
+	<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"> </script>
+</body>
+</html>
