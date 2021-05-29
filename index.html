@@ -2,88 +2,114 @@
 <html>
 
 <head>
-	<title>Home</title>
-	
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-	
-	<!-- Custom Theme files -->
+	<title>首页 | 未成年犯罪几时休？</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Jim Guide Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-	<script
-		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //Custom Theme files -->
-	<!-- js -->
+
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/popper.min.js"></script>
-	<script src="js/"></script>
-
+	<script src="js/echarts.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
-	<!-- //js -->
-	<!-- start-smoth-scrolling-->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/flexy-menu.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+
+	<script>
+		addEventListener("load",
+			function () {
+				setTimeout(hideURLbar, 0);
+			},
+			false);
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				},
+					1000);
 			});
 		});
+
+		$(document).ready(function () {
+			$(".flexy-menu").flexymenu({
+				speed: 400,
+				indicator: true
+			});
+		});
+
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			});
+		});
+
 	</script>
-	<!--//end-smoth-scrolling-->
-	<!--menu js-->
-	<script type="text/javascript" src="js/flexy-menu.js"></script>
-	<script
-		type="text/javascript">$(document).ready(function () { $(".flexy-menu").flexymenu({ speed: 400, indicator: true }); });</script>
-	<!--//menu js-->
+
 </head>
 
 <body>
-	<!--banner-->
 	<div class="banner">
-		<script src="js/responsiveslides.min.js"></script>
-		<script>
-			$(function () {
-				$("#slider").responsiveSlides({
-					auto: true,
-					nav: true,
-					speed: 500,
-					namespace: "callbacks",
-					pager: true,
-				});
-			});
-		</script>
 		<div class="container">
 			<div class="header">
-				<div class="logo">
-					<a href="index.html">Jim <span>Guide</span></a>
-				</div>
+				<div class="logo"><a href="index.html">未成年犯罪<span>几时休？ </span></a></div>
 				<div class="top-nav">
 					<ul class="flexy-menu orange nav1">
-						<li><a class="active" href="index.html">Home</a></li>
-						<li><a href="#">About</a>
+						<li>
+							<a class="active" href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="#">案例</a>
 							<ul>
-								<li><a href="about.html">Lorem1</a></li>
-								<li><a href="about.html">Lorem2</a></li>
-								<li><a href="about.html">Lorem3</a></li>
-								<li><a href="about.html">Lorem4</a></li>
+								<li>
+									<a href="about.html">1</a>
+								</li>
+								<li>
+									<a href="about.html">2</a>
+								</li>
+								<li>
+									<a href="about.html">3</a>
+								</li>
+								<li>
+									<a href="about.html">4</a>
+								</li>
 							</ul>
 						</li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="#">Gallery</a>
+						<li>
+							<a href="services.html">Services</a>
+						</li>
+						<li>
+							<a href="#">Gallery</a>
 							<ul>
-								<li><a href="gallery.html">Gallery 1</a></li>
-								<li><a href="gallery.html">Gallery 2</a></li>
-								<li><a href="gallery.html">Gallery 3</a></li>
+								<li>
+									<a href="gallery.html">Gallery 1</a>
+								</li>
+								<li>
+									<a href="gallery.html">Gallery 2</a>
+								</li>
+								<li>
+									<a href="gallery.html">Gallery 3</a>
+								</li>
 							</ul>
 						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
 					</ul>
 				</div>
-				<div class="clearfix"></div>
+				<div class="clearfix">
+				</div>
 			</div>
 		</div>
 		<div class="slider">
@@ -91,91 +117,125 @@
 				<div class="callbacks_container">
 					<ul class="rslides" id="slider">
 						<li>
-							<h1>TECHNIQUE <br>MUSCLE</h1>
-						</li>
-						<li>
-							<h1>LORIPSUM <br>LETTERS</h1>
-						</li>
-						<li>
-							<h1>VEROACCUS<br>DUCIMUS</h1>
+							<h3>
+								<span style="color: red;">“没有是非观的孩子是这个世界上最可怕的生物，</span>
+								<br />
+								<span>他们有好奇心、行动力、破坏力和《未成年人保护法》。”</span>
+							</h3>
 						</li>
 					</ul>
-					<h4>' lorem ipsum ' will uncover many</h4>
-					<a class="readmore" href="#">MORE</a>
+					<br />
+					<h4>——《亲爱的弗洛伊德》</h4>
+					<a class="readmore" href="#a_1">继续</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--//banner-->
-	<div class="copyrights">Collect from <a href="https://www.webmoban.net">手机网站模板</a></div>
-	<!--banner-bottom-->
+
 	<div class="banner-bottom">
+		<a id="a_1"></a>
 		<div class="bnr-btm-left">
-			<h4>Loderful designs takenposs <br> has voluptatemut enimminim quis nostrum</h4>
-			<iframe src="https://player.vimeo.com/video/70613839" allowfullscreen></iframe>
-			<p> Lorem Ipsum has been 23/07/2015</p>
+			<h4>一个10岁女孩
+				<br>逝于荒野
+			</h4>
+			<p>2019年10月20日·大连</p>
+			<hr />
+			<div>
+				<p>2019年10月20日，一对寻常的父母正等着女儿淇淇上完美术辅导班回家。</p>
+				<p>天色渐晚，淇淇仍没有回来。担心女儿遇到危险的父母出门寻找，发现10岁的淇淇歪倒在离家不过百米的灌木丛里，她裤子只穿了一半，浑身是血，身上盖满了砖头、编织袋和沙子。
+					看到心爱的女儿如此惨死，淇淇的妈妈当场晕厥。</p>
+				<p>一个不谙世事的小女孩身中七刀，死状凄惨。这个噩耗不仅让淇淇的父母难以接受，而且在社会上掀起惊慌和哗然。</p>
+				<p>警方事后查明，行凶者是和淇淇同小区的14岁少年蔡某。在淇淇离家不过百米的路上，蔡某突然出现将淇淇诱骗到家里想要实施强奸。在此过程中，淇淇奋力抵抗，他恼羞成怒，用水果刀将淇淇捅刺了七刀，最终将她残忍杀害并丢尸灌木丛。
+					在发现淇淇的尸体时，蔡某也曾混迹在看热闹的人群里，不屑地说：“不就是死人吗，有什么大不了的？” </p>
+			</div>
 		</div>
 		<div class="bnr-btm-right">
-			<p>Lorem Ipsum printing and typesetting industry </p>
-			<h3>Magnam aliquam quaerat voluptatemut enim minima veniam, quis nostrum exercitation laboriosam</h3>
-			<p>Lorem Ipsum is simply dummy the when an unknown printer took a galley of type and scrambled it to make a
-				type specimen book It has survived not only five centuries, but also the leap into electronic
-				typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-				Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-				Aldus PageMaker including versions of Lorem Ipsum.</p>
-			<a class="readmore more" href="#"> Read More</a>
+			<div>
+				<p>2020年1月，淇淇的妈妈正式向蔡某家人提请民事诉讼。5月，法院开庭，蔡家人缺席。8月，法院做出民事诉讼判决，要求蔡家人赔偿淇淇一家128万余元并在判决生效的十天内公开道歉。</p>
+				<p>而蔡家人早已搬离了小区，并没有履行法院的判决结果，甚至在强制执行后也拒绝配合。</p>
+				<p>2020年11月5日，在淇淇遇害将近400天的时候，蔡家人终于登报公开道歉。</p>
+				<p>在这条暗黑的路上，淇淇的妈妈倔强而孤独地走过。她并不在乎诉讼结果里的经济赔偿，因为“孩子不是靠百八十万就能回来的，对他和他父母的惩罚还远远不够。”但在看到这封道歉信时，忍不住失声痛哭，她已经等了太久。
+				</p>
+				<p>淇淇不是唯一的受害者，蔡某也不是第一个种下恶之花的孩子。</p>
+			</div>
+			<hr />
+			<a class="readmore more"
+				href="http://news.cctv.com/2020/05/09/ARTIuiZEW3uK9nW7Y8f5PQSO200509.shtml">查看新闻</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
+
+
 	<div class="bnr-about">
 		<div class="bnr-about-left">
-			<p>Lorem Ipsum printing and typesetting industry </p>
-			<h3>Magnam aliquam quaerat voluptatemut enim minima veniam, quis nostrum exercitation laboriosam</h3>
-			<ul>
-				<li>
-					<img src="images/icon3.png" alt="" />
-					<p>Finibus Bonorum et Malorum</p>
-				</li>
-				<li>
-					<img src="images/icon4.png" alt="" />
-					<p>Finibus et Bonorum Malorum</p>
-				</li>
-				<li>
-					<img src="images/icon5.png" alt="" />
-					<p>ginibusbon orumet Malorum</p>
-				</li>
-			</ul>
+			<div>
+				<p>
+					年轻的岁月迎风而来，恰似千树花开。
+				</p>
+				<p>
+					未成年代表着简单和纯粹，他们的笑容最容易让人联想到风华正茂、意气风发。这样的年纪是比清风明月、草长莺飞更美好的事物。
+				</p>
+				<p>
+					可是当这个词语与如此残忍的行凶手段和极其冷酷的犯罪心理联系在一起时，却不禁让人毛骨悚然。显然，。为了避免更多“淇淇”受害，我们就要探究，像蔡某这样的孩子全国到底有多少？他们行为的产生原因有没有相关的规律和共性可循？我们能不能针对这些事情做些什么？
+				</p>
+				<p>
+					为此，我们搜集到了Alpha案例库的6479个案例以及在律所的帮助下，从中窥探未成年犯罪的一角，以期驱散孩子们成长下的阴霾。
+				</p>
+			</div>
 		</div>
+
 		<div class="bnr-about-right">
-			<img src="images/img1.jpg" alt="" />
+
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+
+
+	<div class="banner-bottom">
+		<div class="bnr-btm-left">
+			<h4>未成年人犯罪年份图</h4>
+			<hr />
+			<div id="chart_1" style="height: 400px;"></div>
+		</div>
+		<div class="bnr-btm-right">
+			<div>
+				<h4>看似没有藩篱的未成年</h4>
+				<hr />
+				<p>
+					我们首先根据这6479个案例进行了初步统计。
+				</p>
+				<p>
+					相关数据显示，从2000年到2015年，由于社会大环境越来越重视“法治”，再加上媒体传播观念的不断改进，使得未成年犯罪案件数量总体呈递增趋势。
+				</p>
+				<p>
+					但之后随着未成年犯罪的社会关注度变高，惩治和教育的相关措施不断完善，未成年刑事犯罪案件的数量在2015年之后逐年降低。
+				</p>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
-	<!--//banner-bottom-->
-	<!--events-->
+
 	<div class="events">
 		<div class="container">
-			<h4>Magnam aliquam quaerat voluptatemut enim minima veniam </h4>
 			<div class="events-grids">
-				<div class="col-md-6 events-left">
-					<h3>Our Gym Services</h3>
-					<h5>Magnam aliquam quaerat voluptatemut enim minima veniam, quis nostrum exercitation laboriosam,
-						Varius lorem Ipsum available aeblandit</h5>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-						alteration in some form, by injected humour, or randomised words which don't look even slightly
-						believable. If you are going to use a passage of Lorem Ipsum </p>
+				<div class="col-md-6 ">
+					<p>
+						一般实施犯罪的未成年人处在未成年到成年的过渡阶段，思想和行为较幼年的依赖心理已经变得相对独立和成熟。
+					</p>
+					<p>
+						但由于缺乏相关的社会经验，正确的三观还未养成，还由于心理上处在“断乳期”，容易滋生模仿、专行和叛逆的行为。
+					</p>
+					<p>
+						如果外部有不良环境加以熏染，再加上家庭及学校教育失当，就容易诱发未成年犯罪发生。
+					</p>
+
+					<p>
+						我们从6479份裁判文书里面随机抽取了两千份对未成年犯罪的特点进行一个初步画像，可以看到，描述未成年犯罪最醒目的词条分别是“汉族”、“无业”、“农民”、“小学文化”、“初中文化”等，这似乎让不良行为和违法犯罪事项的发生变得有迹可循。
+						<img src="images/1.jpg" alt=" " class="img-responsive" />
 				</div>
-				<div class="col-md-6 events-right">
-					<h3>Upcoming Events</h3>
-					<ul>
-						<li><a href="#">Donec quam lscele lorem Ipsum available.</a></li>
-						<li><a href="#">Etiam volutpatbh lorem Ipsum available</a></li>
-						<li><a href="#">Varius lorem Ipsum available aeblandit.</a></li>
-						<li><a href="#">Donec Lorem Ipsum available volutri.</a></li>
-						<li><a href="#">Etiam volutpatbh Lorem Ipsum available</a></li>
-					</ul>
+				<div class="clearfix">
 				</div>
-				<div class="clearfix"></div>
 			</div>
 			<div class="bnr-galry">
 				<div class="col-md-6 bnr-galry-left">
@@ -210,40 +270,141 @@
 						</div>
 					</div>
 				</div>
-				<div class="clearfix"></div>
+				<div class="clearfix">
+				</div>
 			</div>
 		</div>
 	</div>
-	<!--//events-->
-	<!--footer-->
+
+	<div class="bnr-about">
+		<div class="bnr-about-left">
+			<div>
+				<p>从刑事案例的地域分布状况来看，当前刑事案例主要集中在湖南省、广东省和河南省。</p>
+				<p>分别占比13.24％、9.21％和6.85％。其中湖南省案件数量最多，达到了858件。</p>
+			</div>
+		</div>
+
+		<div class="bnr-about-right">
+			<div style="height: 500px;" id="chart_2"></div>
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+
+
+
+
+
 	<div class="footer">
 		<div class="container">
-			<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="https://www.webmoban.net"
-					target="_blank" title="网站模板">网站模板</a> - Collect from <a href="https://www.webmoban.net" title="网页模板"
-					target="_blank">网页模板</a></p>
+			<p>Copyright &copy; 2020</p>
 		</div>
 	</div>
-	<!--//footer-->
-	<script type="text/javascript">
+	<script>let years = []
+		for (let i = 2001; i <= 2019; ++i) {
+			years.push(i);
+		}
+
+		const chart_1 = echarts.init($("#chart_1")[0]);
+		const chart_2 = echarts.init($("#chart_2")[0]);
+
+		chart_2.showLoading();
+
+		const chart_1_option = {
+			xAxis: {
+				type: 'category',
+				data: years
+			},
+			yAxis: {
+				type: 'value'
+			},
+			series: [{
+				data: [1, 1, 11, 11, 21, 89, 32, 48, 231, 256, 415, 444, 530, 834, 861, 799, 685, 573, 566,],
+				type: 'line',
+				smooth: true
+			}]
+		};
+
+		$.get('data/CN.json', function (geoJson) {
+			chart_2.hideLoading();
+			
+			echarts.registerMap('CN', geoJson);
+			
+			chart_2.setOption(chart_2_option = {
+				title: {
+					text: '案件地域分布',
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: '{b}<br/>{c} (例)'
+				},
+				toolbox: {
+					show: true,
+					orient: 'vertical',
+					left: 'right',
+					top: 'center',
+					feature: {
+						dataView: { readOnly: false },
+						restore: {},
+						saveAsImage: {}
+					}
+				},
+				visualMap: {
+					min: 800,
+					max: 50000,
+					text: ['High', 'Low'],
+					realtime: false,
+					calculable: true,
+					inRange: {
+						color: ['lightskyblue', 'yellow', 'orangered']
+					}
+				},
+				series: [
+					{
+						name: '案件地域分布',
+						type: 'map',
+						mapType: 'CN', // 自定义扩展图表类型
+						label: {
+							show: true
+						},
+						data: [
+							{ name: '湖北省', value: 224 },
+						],
+					}
+				]
+			});
+		});
+
+
+
+
+		chart_1_option && chart_1.setOption(chart_1_option);
+
+
+
+	</script>
+	<script>
+
 		$(document).ready(function () {
 			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
 
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-		});
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});</script>
+	<a href="#" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;">
+		</span>
+	</a>
+	<script src="js/bootstrap.min.js">
 	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/bootstrap.min.js"> </script>
 </body>
 
 </html>
