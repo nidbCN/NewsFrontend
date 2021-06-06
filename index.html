@@ -252,10 +252,10 @@
 </div>
 
 <div class="banner-bottom">
-    <div class="bnr-btm-left">
+    <div class="bnr-btm-left2">
         <div style="height: 500px;" id="chart_4"></div>
     </div>
-    <div class="bnr-btm-right">
+    <div class="bnr-btm-right2">
         <div style="height: 500px;" id="chart_3"></div>
     </div>
     <div class="clearfix"></div>
@@ -276,72 +276,28 @@
 
 <div class="banner-bottom">
     <div class="bnr-btm-left">
-        <div style="height: 500px;" id="chart_6"></div>
+        <div style="height: 700px;" id="chart_6"></div>
+
     </div>
     <div class="bnr-btm-right">
         <div>
             <p>近年来，随着未成年犯罪这个社会议题逐渐受到主流媒体的关注，越来越多的相关报道出现在公众视野内，未成年学生进行校园贷等经济诈骗、校园暴力同学致死、性侵伤害他人等案件已经为大众所熟稔。</p>
             <p>我们通过人民日报对未成年犯罪的报道数量，来窥探媒体对于未成年犯罪的关注度。</p>
             <p>通过在人民日报数据库中的数据提取，我们发现，在1977年之前的未成年犯罪报道相对零星不够连续，统计起来不够典型，所以我们对人民日报1977年开始到2020年4月报道的未成年人犯罪案件进行了统计。</p>
+            <p>通过相关媒体的报道，使得大众逐渐接触到这一敏感地带，也为广大社会敲响了注重未成年人犯罪教育以及安全教育等警钟</p>
+            <hr/>
+            <h3>人民日报各年份报道未成年人犯罪数量</h3>
+            <hr/>
+            <a class="readmore more" href="page2.html">法律：为脱缰的孩子悬崖勒马</a>
         </div>
-
     </div>
     <div class="clearfix"></div>
 </div>
 
 
-<div class="events">
-    <div class="container">
-        <div class="events-grids">
-            <div class="col-md-6 ">
-
-            </div>
-            <div class="clearfix">
-            </div>
-        </div>
-        <div class="bnr-galry">
-            <div class="col-md-6 bnr-galry-left">
-                <div class="view view-eighth vie">
-                    <img src="images/img2.jpg" alt=" " class="img-responsive"/>
-                    <div class="mask">
-                        <h2> sheets</h2>
-                        <p>with the release sheets Lorem</p>
-                    </div>
-                </div>
-                <div class="view view-eighth vie">
-                    <img src="images/img3.jpg" alt=" " class="img-responsive"/>
-                    <div class="mask">
-                        <h2> sheets</h2>
-                        <p>with the release sheets Lorem</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 bnr-galry-right">
-                <div class="view view-eighth vie">
-                    <img src="images/img4.jpg" alt=" " class="img-responsive"/>
-                    <div class="mask">
-                        <h2> sheets</h2>
-                        <p>with the release sheets Lorem</p>
-                    </div>
-                </div>
-                <div class="view view-eighth vie">
-                    <img src="images/img5.jpg" alt=" " class="img-responsive"/>
-                    <div class="mask">
-                        <h2> sheets</h2>
-                        <p>with the release sheets Lorem</p>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix">
-            </div>
-        </div>
-    </div>
-</div>
-
-
 <div class="footer">
     <div class="container">
-        <p>Copyright &copy; 2020</p>
+        <p>Copyright &copy; 2020 未成年犯罪几时休</p>
     </div>
 </div>
 
@@ -610,7 +566,7 @@
         ]
     };
     // 图表5选项
-    const chart_5_option =  {
+    const chart_5_option = {
         visualMap: {
             show: false,
             type: 'continuous',
@@ -636,7 +592,66 @@
         }]
     };
     // 图表6选项
-    const chart_6_option = {};
+    const chart_6_option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: '{c}例'
+        },
+        series: [
+            {
+                name: '人民日报各年份报道未成年人犯罪数量',
+                type: 'pie',
+                radius: [50, 200],
+                center: ['50%', '50%'],
+                roseType: 'area',
+                itemStyle: {
+                    borderRadius: 6
+                },
+                data: [
+                    {name: 1977, value: 1},
+                    {name: 1979, value: 4},
+                    {name: 1980, value: 2},
+                    {name: 1981, value: 3},
+                    {name: 1982, value: 1},
+                    {name: 1983, value: 2},
+                    {name: 1984, value: 1},
+                    {name: 1986, value: 1},
+                    {name: 1988, value: 2},
+                    {name: 1989, value: 2},
+                    {name: 1990, value: 4},
+                    {name: 1991, value: 5},
+                    {name: 1992, value: 3},
+                    {name: 1993, value: 2},
+                    {name: 1995, value: 1},
+                    {name: 1996, value: 6},
+                    {name: 1997, value: 5},
+                    {name: 1998, value: 9},
+                    {name: 1999, value: 29},
+                    {name: 2000, value: 39},
+                    {name: 2001, value: 31},
+                    {name: 2002, value: 17},
+                    {name: 2003, value: 24},
+                    {name: 2004, value: 50},
+                    {name: 2005, value: 24},
+                    {name: 2006, value: 20},
+                    {name: 2007, value: 19},
+                    {name: 2008, value: 13},
+                    {name: 2009, value: 22},
+                    {name: 2010, value: 25},
+                    {name: 2011, value: 33},
+                    {name: 2012, value: 32},
+                    {name: 2013, value: 31},
+                    {name: 2014, value: 34},
+                    {name: 2015, value: 23},
+                    {name: 2016, value: 24},
+                    {name: 2017, value: 24},
+                    {name: 2018, value: 22},
+                    {name: 2019, value: 27},
+                    {name: 2020, value: 2}
+                ]
+            }
+        ]
+    };
 
 
     // 绘制图表
@@ -644,6 +659,7 @@
     chart_3_option && chart_3.setOption(chart_3_option);
     chart_4_option && chart_4.setOption(chart_4_option);
     chart_5_option && chart_5.setOption(chart_5_option);
+    chart_6_option && chart_6.setOption(chart_6_option);
 
 </script>
 <script>
