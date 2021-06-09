@@ -38,10 +38,7 @@
 
         });
     </script>
-
-
 </head>
-<!--/head-->
 
 <body>
 <div id="preloader"></div>
@@ -82,7 +79,6 @@
         </div>
     </div>
 </header>
-<!--/header-->
 
 <section id="single-page-slider" class="no-margin">
     <div class="carousel slide" data-ride="carousel">
@@ -92,8 +88,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="carousel-content centered center gap fade-down">
-                                <p style="font-size: 24px;">“主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。</p>
-                                <p style="font-size: 24px;">即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。”</p>
+                                <p style="font-size: 24px;"><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。
+                                </p>
+                                <p style="font-size: 24px;">即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。&nbsp;<i
+                                        class="fa fa-quote-right" aria-hidden="true"></i></p>
                                 <p style="font-size: 24px;">——罗翔</p>
                             </div>
                         </div>
@@ -106,7 +104,7 @@
 
 <div id="content-wrapper">
 
-    <section id="about-us" class="white">
+    <section class="white">
         <div class="container" style="margin-top: -5rem;">
             <div class="gap"></div>
             <div class="row">
@@ -132,515 +130,117 @@
                 </div>
             </div>
         </div>
-</div>
-</section>
+    </section>
 
-<section id="stats" class="divider-section">
-    <div class="gap"></div>
-    <div class="container">
-        <div class="row col-md-12 fade-up">
-            <div id="mt" style="width:58%;height: 360px; float: left;">
-
-                <script type="text/javascript">
-                    // 基于准备好的dom，初始化echarts实例
-                    var myChart = echarts.init(document.getElementById('mt'));
-
-                    // 指定图表的配置项和数据
-                    var data = [
-                        [
-                            [0.5, 881, 881000000, '881 ♂', "男"],
-                            [1, 590, 590000000, '590 ♂', "男"],
-                            [2, 315, 315000000, '315 ♂', "男"],
-                            [3, 241, 241000000, '241 ♂', "男"],
-                            [4, 228, 228000000, '228 ♂', "男"],
-                            [5, 239, 239000000, '239 ♂', "男"],
-                            [6, 147, 147000000, '147 ♂', "男"],
-                            [7, 73, 73000000, '73 ♂', "男"],
-                            [8, 52, 52000000, '52 ♂', "男"],
-                            [9, 30, 30000000, '30 ♂', "男"],
-                            [10, 22, 22000000, '22 ♂', "男"],
-                            [11, 15, 15000000, '15 ♂', "男"],
-                            [12, 10, 10000000, '30 ♂', "男"]
-
-                        ],
-                        [
-                            [0.5, 536, 536000000, '536 ♀', "女"],
-                            [1, 537, 537000000, '537 ♀', "女"],
-                            [2, 377, 377000000, '377 ♀', "女"],
-                            [3, 382, 382000000, '382 ♀', "女"],
-                            [4, 358, 358000000, '358 ♀', "女"],
-                            [5, 313, 313000000, '313 ♀', "女"],
-                            [6, 216, 216000000, '216 ♀', "女"],
-                            [7, 117, 117000000, '117 ♀', "女"],
-                            [8, 78, 78000000, '78 ♀', "女"],
-                            [9, 67, 67000000, '67 ♀', "女"],
-                            [10, 55, 55000000, '55 ♀', "女"],
-                            [11, 56, 56000000, '56 ♀', "女"],
-                            [12, 61, 61000000, '61 ♀', "女"]
-
-                        ]
-                    ];
-
-                    option = {
-
-                        title: {
-                            text: '童模性别及入行年龄分布散点图',
-                            textStyle: {
-                                color: "#f5f5f5"
-                            }
-                        },
-                        legend: {
-                            right: 10,
-                            data: ['男', '女'],
-                            textStyle: {
-                                fontSize: 18, //字体大小
-                                color: '#ffffff' //字体颜色
-                            },
-
-                        },
-                        xAxis: {
-                            splitLine: {
-                                show: false
-                            }, //x轴网格 是否显示
-
-
-                            name: '年龄', //x轴描述   x轴名称
-                            axisLabel: {
-                                show: true,
-                                textStyle: {
-                                    color: 'white', //x轴data 的颜色
-                                    fontSize: 6 // 让字体变大
-                                }
-                            },
-                            nameTextStyle: {
-                                color: 'white' //x轴名称的 颜色
-                            },
-
-                            axisLine: {
-                                symbol: ['none', 'arrow'], //是否显示 箭头
-                                lineStyle: {
-                                    color: 'white', //x轴颜色
-                                }
-                            }
-
-                        },
-
-                        yAxis: {
-                            splitLine: {
-                                show: false
-                            }, //x轴网格 是否显示
-
-
-                            name: '数量', //x轴描述   x轴名称
-                            axisLabel: {
-                                show: true,
-                                textStyle: {
-                                    color: 'white', //x轴data 的颜色
-                                    fontSize: 10 // 让字体变大
-                                }
-                            },
-                            nameTextStyle: {
-                                color: 'white' //x轴名称的 颜色
-                            },
-
-                            axisLine: {
-                                symbol: ['none', 'arrow'], //是否显示 箭头
-                                lineStyle: {
-                                    color: 'white', //x轴颜色
-                                }
-                            }
-                        },
-                        series: [{
-                            name: '男',
-                            data: data[0],
-                            type: 'scatter',
-                            symbolSize: function (data) {
-                                return Math.sqrt(data[2]) / 5e2;
-                            },
-                            label: {
-                                emphasis: {
-                                    show: true,
-                                    formatter: function (param) {
-                                        return param.data[3];
-                                    },
-                                    color: "#ffffff",
-                                    position: 'top'
-                                }
-                            },
-                            itemStyle: {
-                                normal: {
-                                    shadowBlur: 10,
-                                    shadowColor: '#F5F5F500',
-                                    shadowOffsetY: 5,
-                                    color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
-                                        offset: 0,
-                                        color: '#F5F5F5'
-                                    }, {
-                                        offset: 1,
-                                        color: '#F5F5F5'
-                                    }])
-                                }
-                            }
-                        }, {
-                            name: '女',
-                            data: data[1],
-                            type: 'scatter',
-                            symbolSize: function (data) {
-                                return Math.sqrt(data[2]) / 5e2;
-                            },
-                            label: {
-                                emphasis: {
-                                    show: true,
-                                    formatter: function (param) {
-                                        return param.data[3];
-                                    },
-                                    color: "#ffffff",
-                                    position: 'top'
-                                }
-                            },
-                            itemStyle: {
-                                normal: {
-                                    shadowBlur: 10,
-                                    shadowColor: '#c43f3100',
-                                    shadowOffsetY: 5,
-                                    color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
-                                        offset: 0,
-                                        color: '#f9a69b'
-                                    }, {
-                                        offset: 1,
-                                        color: '#c43f31'
-                                    }])
-                                }
-                            }
-                        }]
-                    };
-                    myChart.setOption(option);
-                </script>
-                <p style="font-size: 6px;">数据来源：宝贝模特网童模数据</p>
-            </div>
-
-            <div class=" test test-1" style="width:40%;height: 300px; float: right;">
-                <div class="scrollbar" style="width:100%;">
-                    <p style="line-height: 4rem;">宝贝模特网，一家在网上拥有<span
-                            style="color: #c43f31;font-weight: bold;">6074</span>个注册用户和<span
-                            style="color: #c43f31;font-weight: bold;">3090</span>个商业通告的童模网站印证了她的说法。在该网站上，在各种影视与平面拍摄的通告中，1岁以下的童模需求量位居第三，占比13%。
-                    </p>
-                    <p>&nbsp;</p>
-                    <p style="line-height: 4rem;">
-                        正是因为市场需求庞大，不少父母趁着孩子尚小，就纷纷把孩子往童模圈里送。据统计，童模的入行年龄集中在2岁以下。其中，入行年龄为<span
-                            style=" color: #c43f31;font-weight: bold; ">6-12</span>个月的童模数量排到了<span
-                            style="color: #c43f31;font-weight: bold; ">第二</span>，占比<span
-                            style="color: #c43f31;font-weight: bold; ">17%</span>，而入行年龄为
-                        <span style="color: #c43f31;font-weight: bold; ">0-6</span>个月的童模数量占到了<span
-                            style="color: #c43f31;font-weight: bold; ">6.27%</span>。
-
-                    </p>
-                    <p>&nbsp;</p>
-                    <p style="line-height: 4rem; ">不足岁就被送去当童模是什么概念呢？玲姐告诉我们，在云云8-9个月的时候，摄影师在拍照时就已经会打开闪光灯了。</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<section id="about-us " class="white ">
-    <div class="container ">
-        <div class="row ">
-            <div class="col-md-12 fade-up ">
-                <p>《中国眼镜科技杂志》指出：黄斑区是人眼最重要的区域，位于视网膜中。它是构成视觉能力的核心区域, 也是光敏感度最高和最脆弱的区域, 直到4岁左右才能发育完全。<span
-                        style="font-weight: bold; ">包括闪光灯在内的强光会使孩子的黄斑区被灼伤，并潜在无法修复的风险。</span></p>
-
-                <p>闪光灯对视力将会产生的损害，是大多数低龄童模所无法避免的问题。在这背后，是更多从“围墙外“涌进来的低龄童模家长，他们在用好奇心不断地触碰那条年龄的红色警戒线。
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container ">
-        <div class="gap "></div>
-        <div class="centerfade-down section-heading center ">
-            <h2 class="main-title "><span style="color: #c43f31;">深红的恐惧</span></h2>
-            <hr>
-            <p>拍摄中存在的伤害和不合理比比皆是</p>
-        </div>
-        <div class="gap "></div>
-        <div class="row ">
-            <div class="col-md-12 fade-up ">
-                <p><span style="font-size: 25px;font-weight: bolder; ">透支的人生</span></p>
-                <p>
-                    玲姐涉足童模圈已八年有多，谈及有些在“围墙内“的家长，她表示嗤之以鼻。”我认识一个小孩在广州这边做童模的家长。有一次，我深夜十二点还能看到她在朋友圈分享小孩正在拍摄的动态。后来我私下见过这个小孩，她可能是经常做头发，发尾都分叉了，头发也很干枯。小孩才十岁，脸上就挂着两个大大的眼袋，皮肤也很差。”
-                    <br><span
-                        style="font-weight: bold; ">超长的拍摄时长，并不是让小孩单纯地面对摄像机十多个小时这么简单，它往往在透支着一个孩子未来几十年的人生。</span></p>
-
-                <p> 在宝贝模特网上我们就发现，对儿童有高时长工作需求的童模通告（即4小时以上工作时长）占到了所有通告的<span
-                        style="color: #c43f31;font-weight: bold; ">32.87%</span>，对儿童有超长时长工作需求的童模通告（即10小时以上工作时长）占到了所有通告的<span
-                        style="color: #c43f31;font-weight: bold; ">28.45%</span>。
-                </p>
-            </div>
+    <section class="divider-section" style="padding: 0 !important;">
+        <div class="col-md-4 col-md-offset-1" style="padding: 20px">
+            <br/>
+            <p>一般实施犯罪的未成年人处在未成年到成年的过渡阶段，思想和行为较幼年的依赖心理已经变得相对独立和成熟。</p>
+            <br/>
+            <p>但由于缺乏相关的社会经验，正确的三观还未养成，还由于心理上处在“断乳期”，容易滋生模仿、专行和叛逆的行为。</p>
+            <br/>
+            <p>如果外部有不良环境加以熏染，再加上家庭及学校教育失当，就容易诱发未成年犯罪发生。 </p>
+            <br/>
+            <p>我们从6479份裁判文书里面随机抽取了两千份对未成年犯罪的特点进行一个初步画像。</p>
+            <br/>
+            <p>可以看到，描述未成年犯罪最醒目的词条分别是 “汉族”、“无业”、“农民”、“小学文化”、“初中文化” 等，这似乎让不良行为和违法犯罪事项的发生变得有迹可循。</p>
         </div>
 
-        <div id="meet-the-team " class="row col-md-12 fade-down " style="margin-top: 5rem; ">
-            <div class="fade-down center ">
-                <img src="images/team/ertong1.png " width="90% " height="100% ">
-            </div>
+        <div style="background: #dcdcdc" class=" white col-md-6 col-md-offset-1 center">
+            <img style="width: 100%" src="images/data/words_cloud_2.png"/>
         </div>
+    </section>
 
-        <div class="row col-md-12 fade-up " style="margin-top: 10rem; ">
-            <p>另外，高时长的童模公告大多集中在影视拍摄通告中。在这些通告里，存在一个行话“X”，意思是需要儿童连续拍摄至少十个小时。</p>
-        </div>
-
-        <!--/#meet-the-team-->
-
-        <div class="gap "></div>
-        <div class="row ">
-            <div class="col-md-12 fade-up " style="margin-top: 5rem; ">
-                <p><span style="font-size: 25px;font-weight: bolder; ">连轴转的小机器人</span></p>
-                <p>
-                    玲姐给我们解释道，一次通告时长虽然看起来不高，但是如果是专门给淘宝电商走量的拍摄通告，那些父母都会带着孩子跑上3、4个通告，按一个通告4小时算起，一天下来孩子也要在摄像机前待上十多个小时。 </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="stats " class="divider-section ">
-    <div class="container ">
-        <div class="row fade-up ">
-            <div style="width:60%;float: left;">
-                <img src="images/team/ertong4.gif" width="100%"></div>
-            <div style="width:30%;float: right; margin-top:5rem ;">
-                <p>“或许，你知道杭州织里吗？”</p>
-                <p>杭州织里是玲姐从不敢涉猎的领域，在那里，许多孩子一天连轴转十多个小时，往往衣服左手穿进去，摆个pose，右手又脱出来了。没有商家要求孩子一天接多少单，衣服往往是按件计算的，
-                    但是很多父母为了多赚钱都会要求孩子多拍。玲姐形容那些孩子像“机器人“。她的朋友曾经带着孩子在那里拍过照，一件衣服
-                    <span style="color: #c43f31;font-weight: bold; ">100</span>块，孩子一天拍上<span
-                            style="color: #c43f31;font-weight: bold; ">100</span>套，
-                    完全就是把孩子当成衣架子。拍过一次后，她的朋友扬言再也不想去这个地方了
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="about-us " class="white ">
-    <div class="container ">
-        <div class="gap "></div>
-        <div class="row ">
-            <div class="col-md-12 fade-up ">
-
-                <p>
-                    云云在旁边瞪着大大的眼睛，嘴里念叨着：“我就很讨厌拍很多衣服。那次拍摄，那些叔叔就说让我乖点，否则就要给我加衣服……我讨厌他们……“一种不知名的恐惧从小孩的明眸中间晕染开，孩子的眼睛刹那间变得暗淡下来。</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container ">
-        <div class="gap "></div>
-        <div class="row ">
-            <div class="col-md-12 fade-up ">
-                <p><span style="font-size: 25px;font-weight: bolder; ">衣服下的寒冬酷暑</span></p>
-                <p>被问及还有不喜欢什么的时候，云云的神色开始变得局促不安起来。
-                    <br>“热……让人很难受。“
-                    <br>那是云云在哈尔滨拍摄羽绒服的经历。八月份的哈尔滨温度依然居高不下，云云在持续高温的天气下穿着羽绒服，断断续续拍摄了<b>九个小时</b>，衣服脱下时早已汗流浃背。说起那段经历，云云依然心有余悸。
-                </p>
-            </div>
-        </div>
-
-        <div id="ma" style="width:100%;height:30rem">
-            <script type="text/javascript">
-                // 基于准备好的dom，初始化echarts实例
-                var myChart = echarts.init(document.getElementById('ma'));
-
-                // 指定图表的配置项和数据
-                var option = {
-                    title: {
-                        text: '童模反季拍摄占比图',
-                        color: '#000000',
-                        subtext: '数据来源：宝贝模特网通告数据',
-                        x: 'center'
-                    },
-                    textStyle: {
-                        fontWeight: 'normal', //标题颜色
-                        color: '#000000'
-                    },
-
-                    tooltip: {
-                        trigger: 'item',
-                        formatter: "{a} <br/>{b} : {c} ({d}%)"
-                    },
-                    legend: {
-                        x: 'center',
-                        y: 'bottom',
-                        data: [{
-                            name: '春夏拍摄',
-                            textStyle: {
-                                color: "#000000"
-                            }
-                        }, {
-                            name: '春夏反季',
-                            textStyle: {
-                                color: "#000000"
-                            }
-                        }, {
-                            name: '秋冬拍摄',
-                            textStyle: {
-                                color: "#000000"
-                            }
-                        }, {
-                            name: '秋冬反季',
-                            textStyle: {
-                                color: "#000000"
-                            }
-                        },]
-                    },
-                    toolbox: {
-                        show: true,
-                        feature: {
-                            mark: {
-                                show: true
-                            },
-                            dataView: {
-                                show: true,
-                                readOnly: false
-                            },
-                            magicType: {
-                                show: true,
-                                type: ['pie', 'funnel']
-                            },
-                            restore: {
-                                show: true
-                            },
-                            saveAsImage: {
-                                show: true
-                            }
-                        }
-                    },
-                    color: ['#f9a69b', '#c43f31', '#374e9b', '#aecbf4'], //颜色将根据饼图的区域个数循环
-                    data: [{
-                        value: 80,
-                        name: '春夏拍摄'
-                    }, {
-                        value: 20,
-                        name: '春夏反季'
-                    }, {
-                        value: 80,
-                        name: '秋冬拍摄'
-                    }, {
-                        value: 20,
-                        name: '秋冬反季'
-                    },
-
-                    ],
-
-                    calculable: true,
-                    series: [{
-                        name: '反季拍摄',
-                        type: 'pie',
-                        radius: [30, 110],
-                        center: ['25%', '50%'],
-                        roseType: 'radius',
-                        label: {
-                            normal: {
-                                show: false
-                            },
-                            emphasis: {
-                                show: true
-                            }
-                        },
-                        lableLine: {
-                            normal: {
-                                show: false
-                            },
-                            emphasis: {
-                                show: true
-                            }
-                        },
-                        data: [{
-                            value: 73.6,
-                            name: '春夏拍摄'
-                        }, {
-                            value: 26.4,
-                            name: '春夏反季'
-                        }]
-                    }, {
-                        name: '反季拍摄',
-                        type: 'pie',
-                        radius: [30, 110],
-                        center: ['75%', '50%'],
-                        roseType: 'radius',
-                        label: {
-                            normal: {
-                                show: false
-                            },
-                            emphasis: {
-                                show: true
-                            }
-                        },
-                        lableLine: {
-                            normal: {
-                                show: false
-                            },
-                            emphasis: {
-                                show: true
-                            }
-                        },
-                        data: [{
-                            value: 30.8,
-                            name: '秋冬反季'
-                        }, {
-                            value: 69.2,
-                            name: '秋冬拍摄'
-                        }]
-                    }]
-                };
-                myChart.setOption(option);
-            </script>
-        </div>
-        <div class="row" style="margin-top: 5rem;">
-            <div class="col-md-12  fade-up">
-                <p><span style="font-weight: bold;"> 事实上，反季拍摄也往往是许多孩子的噩梦。</span>
-                    尽管摄影棚会有专门的温度调适设施，但是还是难以阻挡室外温度对室内温度的寝室。在宝贝模特网上，在明确表明服装要求的通告中，要求在春夏季拍摄秋冬装的通告占了
-                    <span style="color: #c44031;font-weight: bold;">30.8%</span>的比例，而要求在秋冬季拍摄春夏装的通告占了<span
-                            style="color: #c43f31;font-weight: bold;">26.4%</span>的比例。
-                    <span style="font-weight: bold;">
-                                    平均下来，要求反季拍摄的通告比例几乎达到了三分之一的水平，这对孩子稚嫩的身体而言是难以承受的折磨。</span></p>
-                <p>通告往往是可叠加的，当父母在不加筛选的情况下，把孩子同时置于超长拍摄时长，超多拍摄件数和反季拍摄的境地，对于孩子而言只会是一种不断深化的痛苦和恐惧。 </p>
-                <p><span
-                        style="font-weight: bold;">然而数据显示，童模的注册地区大多集中于北上广和浙江，这些来自经济发达地区的孩子，他们的家长真的对钱有如此紧急的需求吗？</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="stats" class="divider-section">
-    <div class="row" style="margin-top: 1rem;">
-        <p align="center" style="font-size: 5rem;">童模来源地区分布图</p>
-        <div class="center" style="width: 100%;height: 60rem;margin-top: 1rem;">
-            <iframe style="width: 100%;height: 100%;"
-                    src="https://maplab.amap.com/share/mapv/28d4f120235bf99d71a16c537e9211cd"></iframe>
-        </div>
-        <p align="right" style="margin-right: 3rem;">数据来源：宝贝模特网童模数据</p>
-    </div>
-
-</section>
-
-</div>
-
-<div id="footer-wrapper">
-    <section id="bottom" class="">
+    </section>
+    <section class="white">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-6 center">
-
-                    <p>说到底，童模能否摆脱红色的出境关键在于他们的父母能否走出灰色的“捞金诱惑”。</p>
-                    <hr width="60%" size="1px">
-                    <h4 style="font-size: 48px;"><span class="hui"><a class="hui" href="page2.html"> 灰&nbsp;&nbsp;色</a></span>
-                    </h4>
+                <div class="col-md-12 center">
+                    <div>
+                        <p>从刑事案例的地域分布状况来看，当前刑事案例主要集中在湖南省、广东省和河南省。分别占比13.24％、9.21％和6.85％。</p>
+                        <p>其中湖南省案件数量最多，达到了858件。</p>
+                    </div>
+                    <div style="height: 500px" id="chart_2"></div>
+                    <p>请将鼠标放置到图中查看数据</p>
                 </div>
-                <!--/.col-md-3-->
+
             </div>
         </div>
     </section>
-    <!--/#bottom-->
+
+    <section class="divider-section ">
+        <div class="container">
+            <div class="row fade-up">
+                <div class="col-md-12">
+                    <p>从案由分类的情况，可以看到未成年犯罪当前最主要的刑事案由主要有三个：</p>
+                    <p>分别是侵犯财产罪、妨害社会管理秩序罪、侵犯公民人身权利与民主权利罪。</p>
+                    <p>其次的两个是危害公共安全罪与破坏经济秩序罪。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center fade-up">
+                    <img src="images/data/reason_and_type.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="divider-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <br/><br/>
+                    <p>其中涉事案件的犯罪金额多在一万元以下，呈现金额小的案件数量多这样的反比关系。</p>
+                    <p> 这说明，未成年人犯罪案件中，涉事金额相对较小，作案规模大部分来说不算庞大，处于相对较控制的阶段，对社会的危害相对在可控范围内。</p>
+                    <p> 但我们不仅需要预防未成年犯罪的规模不断扩大，也要逐渐发力缩小未成年人犯罪的影响与数量。</p>
+                </div>
+                <div class="col-md-8">
+                    <div id="chart_3" style="height: 500px;width: 100%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center fade-up">
+                    <div>
+                        <p>近年来，随着未成年犯罪这个社会议题逐渐受到主流媒体的关注，越来越多的相关报道出现在公众视野内。 </p>
+                        <p>未成年学生进行校园贷等经济诈骗、校园暴力同学致死、性侵伤害他人等案件已经为大众所熟稔。</p>
+                        <p>我们通过人民日报对未成年犯罪的报道数量，来窥探媒体对于未成年犯罪的关注度。</p>
+                        <p>
+                            通过在人民日报数据库中的数据提取，我们发现，在1977年之前的未成年犯罪报道相对零星不够连续，统计起来不够典型，所以我们对人民日报1977年开始到2020年4月报道的未成年人犯罪案件进行了统计。</p>
+                    </div>
+                    <div id="chart_4" style="height: 600px"></div>
+                    <div>
+                        <p>以《人民日报》为例，据检索数据显示，进入21世纪后，其关于未成年犯罪的事件报道较上世纪有大幅增加，在2004年的以50例之多达到数据峰值。</p>
+                        <p>之后由于少年法庭、《未成年人保护法》、《未成年人犯罪法》和收容教养条例等相关法条和措施的制定完善，数据呈现小幅度的下降并逐渐趋于稳定。</p>
+                        </p>通过相关媒体的报道，使得大众逐渐接触到这一敏感地带，也为广大社会敲响了注重未成年人犯罪教育以及安全教育等警钟</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="footer-wrapper">
+    <section id="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 center">
+                    <h2><span class="hui"><a class="hui" href="page2.html">法律：为脱缰的孩子悬崖勒马 <i
+                            class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer id="footer" class="">
         <div class="container">
@@ -651,7 +251,6 @@
                 <div class="col-sm-4">
                     <ul class="pull-right">
                         <li><a id="gototop" class="gototop" href="page2.html"><i class="fa fa-chevron-up"></i></a></li>
-                        <!--#gototop-->
                     </ul>
                 </div>
             </div>
@@ -667,9 +266,13 @@
         years.push(i);
     }
 
+    // 图表对象
     const chart_1 = echarts.init($("#chart_1")[0]);
+    const chart_2 = echarts.init($("#chart_2")[0]);
+    const chart_3 = echarts.init($("#chart_3")[0]);
+    const chart_4 = echarts.init($("#chart_4")[0]);
 
-    // 图表1选项
+    // 图表选项
     const chart_1_option = {
         tooltip: {
             trigger: 'axis',
@@ -695,8 +298,248 @@
             smooth: true
         }]
     };
+    $.get('map/CN.json', function (geoJson) {
+        chart_2.hideLoading();
+
+        echarts.registerMap('CN', geoJson);
+
+        chart_2.setOption(chart_2_option = {
+            title: {
+                text: '案件地域分布',
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}<br/>{c} (例)'
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                left: 'right',
+                top: 'center',
+                feature: {
+                    dataView: {
+                        readOnly: false
+                    },
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            visualMap: {
+                min: 0,
+                max: 1400,
+                text: ['多', '少'],
+                realtime: false,
+                calculable: true,
+                inRange: {
+                    color: ['#FF7500', '#FF5300', '#FF1000', '#CC0000',]
+                }
+            },
+            series: [{
+                name: '案件地域分布',
+                type: 'map',
+                mapType: 'CN', // 自定义扩展图表类型
+                label: {
+                    show: false
+                },
+                data: [{
+                    name: '新疆维吾尔自治区',
+                    value: 84
+                }, {
+                    name: '西藏自治区',
+                    value: 4
+                }, {
+                    name: '内蒙古自治区',
+                    value: 163
+                }, {
+                    name: '青海省',
+                    value: 58
+                }, {
+                    name: '四川省',
+                    value: 368
+                }, {
+                    name: '黑龙江省',
+                    value: 254
+                }, {
+                    name: '甘肃省',
+                    value: 277
+                }, {
+                    name: '云南省',
+                    value: 646
+                }, {
+                    name: '广西壮族自治区',
+                    value: 575
+                }, {
+                    name: '湖南省',
+                    value: 865
+                }, {
+                    name: '陕西省',
+                    value: 538
+                }, {
+                    name: '广东省',
+                    value: 1374
+                }, {
+                    name: '吉林省',
+                    value: 338
+                }, {
+                    name: '河北省',
+                    value: 455
+                }, {
+                    name: '湖北省',
+                    value: 224
+                }, {
+                    name: '贵州省',
+                    value: 172
+                }, {
+                    name: '山东省',
+                    value: 195
+                }, {
+                    name: '江西省',
+                    value: 509
+                }, {
+                    name: '河南省',
+                    value: 1028
+                }, {
+                    name: '辽宁省',
+                    value: 323
+                }, {
+                    name: '山西省',
+                    value: 161
+                }, {
+                    name: '安徽省',
+                    value: 438
+                }, {
+                    name: '福建省',
+                    value: 220
+                }, {
+                    name: '浙江省',
+                    value: 784
+                }, {
+                    name: '江苏省',
+                    value: 441
+                }, {
+                    name: '重庆市',
+                    value: 130
+                }, {
+                    name: '宁夏回族自治区',
+                    value: 14
+                }, {
+                    name: '海南省',
+                    value: 1028
+                }, {
+                    name: '台湾省',
+                    value: undefined
+                }, {
+                    name: '北京市',
+                    value: 17
+                }, {
+                    name: '天津市',
+                    value: 22
+                }, {
+                    name: '上海市',
+                    value: 89
+                }, {
+                    name: '香港特别行政区',
+                    value: undefined
+                }, {
+                    name: '澳门特别行政区',
+                    value: undefined
+                }],
+            }]
+        });
+    });
+    const chart_3_option = {
+        textStyle: {
+            color: "#EEE"
+        },
+        visualMap: {
+            show: false,
+            type: 'continuous',
+            seriesIndex: 0,
+            min: 0,
+            max: 500
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['1万元以下', '1万元至3万元', '3万元至10万元', '10万元至20万元', '20万元至50万元', '50万元至100万元', '100万元至500万元', '500万元以上'],
+        },
+        yAxis: {
+            type: 'value',
+        },
+        series: [{
+            data: [635, 189, 100, 22, 14, 5, 4, 2],
+            type: 'line',
+            areaStyle: {}
+        }]
+    };
+    const chart_4_option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: '{c}例'
+        },
+        series: [
+            {
+                name: '人民日报各年份报道未成年人犯罪数量',
+                type: 'pie',
+                radius: [50, 200],
+                center: ['50%', '50%'],
+                roseType: 'area',
+                itemStyle: {
+                    borderRadius: 6
+                },
+                data: [
+                    {name: 1977, value: 1},
+                    {name: 1979, value: 4},
+                    {name: 1980, value: 2},
+                    {name: 1981, value: 3},
+                    {name: 1982, value: 1},
+                    {name: 1983, value: 2},
+                    {name: 1984, value: 1},
+                    {name: 1986, value: 1},
+                    {name: 1988, value: 2},
+                    {name: 1989, value: 2},
+                    {name: 1990, value: 4},
+                    {name: 1991, value: 5},
+                    {name: 1992, value: 3},
+                    {name: 1993, value: 2},
+                    {name: 1995, value: 1},
+                    {name: 1996, value: 6},
+                    {name: 1997, value: 5},
+                    {name: 1998, value: 9},
+                    {name: 1999, value: 29},
+                    {name: 2000, value: 39},
+                    {name: 2001, value: 31},
+                    {name: 2002, value: 17},
+                    {name: 2003, value: 24},
+                    {name: 2004, value: 50},
+                    {name: 2005, value: 24},
+                    {name: 2006, value: 20},
+                    {name: 2007, value: 19},
+                    {name: 2008, value: 13},
+                    {name: 2009, value: 22},
+                    {name: 2010, value: 25},
+                    {name: 2011, value: 33},
+                    {name: 2012, value: 32},
+                    {name: 2013, value: 31},
+                    {name: 2014, value: 34},
+                    {name: 2015, value: 23},
+                    {name: 2016, value: 24},
+                    {name: 2017, value: 24},
+                    {name: 2018, value: 22},
+                    {name: 2019, value: 27},
+                    {name: 2020, value: 2}
+                ]
+            }
+        ]
+    };
+
 
     chart_1_option && chart_1.setOption(chart_1_option);
+    chart_3_option && chart_3.setOption(chart_3_option);
+    chart_4_option && chart_4.setOption(chart_4_option);
 </script>
 
 <script src="js/bootstrap.min.js"></script>
