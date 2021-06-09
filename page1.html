@@ -138,7 +138,7 @@
                         <p>其中湖南省案件数量最多，达到了858件。</p>
                     </div>
                     <div style="height: 500px" id="chart_2"></div>
-                    <p>请将鼠标放置到图中查看数据</p>
+                    <span>请将鼠标放置到图中查看数据</span><br/>
                 </div>
 
             </div>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="col-md-8 center fade-down">
                     <div id="chart_3" style="height: 500px;width: 100%"></div>
-                    <span>请将鼠标放置到图中查看数据</span>
+                    <span>请将鼠标放置到图中查看数据</span><br/>
                 </div>
             </div>
         </div>
@@ -197,7 +197,7 @@
                     </div>
                     <div>
                         <div id="chart_4" style="height: 600px"></div>
-                        <span>请将鼠标放置到图中查看数据</span>
+                        <span>请将鼠标放置到图中查看数据</span><br/>
                     </div>
                     <div>
                         <p>以《人民日报》为例，据检索数据显示，进入21世纪后，其关于未成年犯罪的事件报道较上世纪有大幅增加，在2004年的以50例之多达到数据峰值。</p>
@@ -244,6 +244,28 @@
     let years = []
     for (let i = 2001; i <= 2019; ++i) {
         years.push(i);
+    }
+
+    // 图4 RGB线性插值
+    // color: rgb(252, 224, 107) to rgb(252, 24, 47)
+    // range: (0, 200, 60)
+    // loop: 40
+    function colorToString(arg) {
+        return `rgb(${arg['r']}, ${arg['g']}, ${arg['b']}`;
+    }
+
+    let colors = [];
+
+    let colorPointer = {
+        r: 252,
+        g: 224,
+        b: 107
+    }
+
+    for (let i = 0; i < 40; ++i) {
+        colors.push(colorToString(colorPointer));
+        colorPointer['g'] -= 5;
+        colorPointer['b'] -= 1.5;
     }
 
     // 图表对象
@@ -457,6 +479,7 @@
         }]
     };
     const chart_4_option = {
+        color: colors,
         tooltip: {
             trigger: 'item',
             formatter: '{c}例'
@@ -469,7 +492,9 @@
                 center: ['50%', '50%'],
                 roseType: 'area',
                 itemStyle: {
-                    borderRadius: 6
+                    borderRadius: 0,
+                    borderColor: '#fff',
+                    borderWidth: 2
                 },
                 data: [
                     {name: 1977, value: 1},
