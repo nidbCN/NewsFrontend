@@ -14,6 +14,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <script src="js/echarts.min.js"></script>
     <script src="js/jquery.js"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -48,8 +49,8 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">首页</a></li>
-                <li><a href="page1.html">审判</a></li>
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="page1.html">审判</a></li>
                 <li><a href="page2.html">法律</a></li>
                 <li><a href="page3.html">德育</a></li>
             </ul>
@@ -65,9 +66,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="my-title carousel-content centered center gap fade-down">
-                                <p ><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。
+                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。
                                 </p>
-                                <p >即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。&nbsp;<i
+                                <p>即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。&nbsp;<i
                                         class="fa fa-quote-right" aria-hidden="true"></i></p>
                                 <p class="my-title-author">——罗翔</p>
                             </div>
@@ -92,8 +93,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-12 fade-down">
+                <div class="col-md-12 center fade-down">
                     <div>
                         <p>我们首先根据这6479个案例进行了初步统计。</p>
                         <p>相关数据显示，从2000年到2015年，由于社会大环境越来越重视“法治”，再加上媒体传播观念的不断改进，使得未成年犯罪案件数量总体呈递增趋势。</p>
@@ -102,7 +104,6 @@
                             <div id="chart_1" style="height: 500px; width: 100%"></div>
                             <span>请将鼠标放置到图中查看数据</span>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -147,7 +148,7 @@
     <section class="divider-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 fade-down">
+                <div class="col-md-12 center fade-down">
                     <p>从案由分类的情况，可以看到未成年犯罪当前最主要的刑事案由主要有三个：</p>
                     <p>分别是侵犯财产罪、妨害社会管理秩序罪、侵犯公民人身权利与民主权利罪。</p>
                     <p>其次的两个是危害公共安全罪与破坏经济秩序罪。</p>
@@ -160,7 +161,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center fade-down">
-                    <img alt="reason & type" class="my-img-full" src="images/data/reason_and_type.png"/>
+                    <img alt="reason & type" class="my-img-md" src="images/data/reason_and_type.png"/>
                 </div>
             </div>
         </div>
@@ -175,8 +176,9 @@
                     <p> 这说明，未成年人犯罪案件中，涉事金额相对较小，作案规模大部分来说不算庞大，处于相对较控制的阶段，对社会的危害相对在可控范围内。</p>
                     <p> 但我们不仅需要预防未成年犯罪的规模不断扩大，也要逐渐发力缩小未成年人犯罪的影响与数量。</p>
                 </div>
-                <div class="col-md-8 fade-down">
+                <div class="col-md-8 center fade-down">
                     <div id="chart_3" style="height: 500px;width: 100%"></div>
+                    <span>请将鼠标放置到图中查看数据</span>
                 </div>
             </div>
         </div>
@@ -193,7 +195,10 @@
                         <p>
                             通过在人民日报数据库中的数据提取，我们发现，在1977年之前的未成年犯罪报道相对零星不够连续，统计起来不够典型，所以我们对人民日报1977年开始到2020年4月报道的未成年人犯罪案件进行了统计。</p>
                     </div>
-                    <div id="chart_4" style="height: 600px"></div>
+                    <div>
+                        <div id="chart_4" style="height: 600px"></div>
+                        <span>请将鼠标放置到图中查看数据</span>
+                    </div>
                     <div>
                         <p>以《人民日报》为例，据检索数据显示，进入21世纪后，其关于未成年犯罪的事件报道较上世纪有大幅增加，在2004年的以50例之多达到数据峰值。</p>
                         <p>之后由于少年法庭、《未成年人保护法》、《未成年人犯罪法》和收容教养条例等相关法条和措施的制定完善，数据呈现小幅度的下降并逐渐趋于稳定。</p>
@@ -209,7 +214,7 @@
     <section id="bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-6 center">
+                <div class="col-md-12 center">
                     <h2><span class="hui"><a class="hui" href="page2.html">法律：为脱缰的孩子悬崖勒马 <i
                             class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></span>
                     </h2>
@@ -255,6 +260,7 @@
                 type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
             },
         },
+        color: ['#C23531'],
         xAxis: {
             type: 'category',
             data: years,

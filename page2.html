@@ -37,7 +37,7 @@
 
 <body>
 <div id="preloader"></div>
-<header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,9 +48,9 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="index.html">首页</a></li>
                 <li><a href="page1.html">审判</a></li>
-                <li><a href="page2.html">法律</a></li>
+                <li class="active"><a href="page2.html">法律</a></li>
                 <li><a href="page3.html">德育</a></li>
             </ul>
         </div>
@@ -64,12 +64,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="carousel-content centered center gap fade-down">
-                                <p style="font-size: 24px;"><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;一个细小的、瞬息即逝的期望可以经常地从纯自然的环境中产生出来，
+                            <div class="my-title carousel-content centered center gap fade-down">
+                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;一个细小的、瞬息即逝的期望可以经常地从纯自然的环境中产生出来，
                                 </p>
-                                <p style="font-size: 24px;">而一个强烈而持久的期望，则只能来自于法律。&nbsp;<i
+                                <p>而一个强烈而持久的期望，则只能来自于法律。&nbsp;<i
                                         class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                <p style="font-size: 24px;">——边沁</p>
+                                <p class="my-title-author">——边沁</p>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 fade-up">
+                <div class="col-md-12 fade-down">
                     <div>
                         <p>淇淇遇害后，根据我国《刑法》规定，未成年人年满16周岁需负刑事责任，故意杀人、强奸等八类刑事犯罪，追责年龄有所降低，但仍限制在14岁到16岁。</p>
                         <p>蔡某作案情节恶劣，但因年龄未满14周岁，仍然属于无刑事责任行为能力人，所以依法被判收容三年。</p>
@@ -101,7 +101,7 @@
                     </div>
                     <br/>
                     <div class="center">
-                        <img alt="results" src="images/data/results.gif"/>
+                        <img alt="results" class="my-img-full" src="images/data/results.gif"/>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
     <section class="divider-section">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12 center fade-down">
                     <div>
                         <p>在我国，刑罚处罚主要包括主刑和附加刑两部分。</p>
                         <p>主刑是对犯罪适用的主要刑罚办法，附加刑是补充主刑适用的刑罚办法。</p>
@@ -126,8 +126,8 @@
     <section class="white">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 center">
-                    <img alt="punishments" style="width: 45%" src="images/data/punishments.png"/>
+                <div class="col-md-12 center fade-down">
+                    <img alt="punishments" class="my-img-sm" src="images/data/punishments.png"/>
                 </div>
             </div>
         </div>
@@ -135,8 +135,8 @@
 
     <section class="divider-section ">
         <div class="container">
-            <div class="row fade-up">
-                <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12 center fade-down">
                     <p>从审判期限方面看，未成年犯罪案件主要在30-90天内审理结束。</p>
                     <p>从侧面也发映出了未成年犯罪的案情一般较为简单，有章可循、有法可依，所以审理过程按部就班、较少冗余。</p>
                 </div>
@@ -147,7 +147,7 @@
     <section class="white">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 center fade-up">
+                <div class="col-md-12 center fade-down">
                     <img alt="time" src="images/data/time.png"/>
                 </div>
             </div>
@@ -157,7 +157,7 @@
     <section class="divider-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 center fade-down">
                     <p>不论在任何犯罪行为中，法律都是至高无上的一环。</p>
                     <p>尤其是在未成年人犯罪这样一个敏感的地带里，法律应该发挥更好的作用规范未成年人的发展。</p>
                     <p>在深度了解了未成年人犯罪案件的基本情况之后，我们对未成年人犯罪案件中引用的高频法条进行了统计。</p>
@@ -169,24 +169,19 @@
     <section class="white">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 fade-up">
-                    <div class="center">
-                        <h3>一图了解刑事案件高频引用法条</h3>
-                        <div id="chart_1" style="height: 1000px"></div>
-                        <span>请将鼠标放置到点上查看数据</span>
-                    </div>
+                <div class="col-md-12 center fade-down">
+                    <h3>一图了解刑事案件高频引用法条</h3>
+                    <div id="chart_1" style="height: 1000px"></div>
+                    <span>请将鼠标放置到点上查看数据</span>
                     <hr/>
-                    <div>
-                        <p>其中引用频次最多的第十七条则是明确规定了不同年龄的未成年应当受到的相应的刑罚。</p>
-                        <p>而根据修改前的刑法规定，未满14周岁的未成年人，无需承担刑事责任。</p>
-                        <p>令人痛心的是，有的孩子犯罪后因未到刑事责任年龄免于刑罚，多年后居然再度犯案，且手法更加残暴。</p>
-                        <br/>
-                        <p>2020年12月26日全国人大常委会会议表决通过刑法修正案（十一），对刑事责任年龄相关规定作出调整。</p>
-                        <p>12至14周岁未成年人故意杀人等犯罪，将不再是刑事“免责人群”。让这些犯下重罪的“小恶魔”们受到应有的制裁。</p>
-                        <br/>
-                        <p>因不满法定刑事责任年龄不予刑事处罚的“问题孩子”，经专门教育指导委员会评估同意，教育行政部门会同公安机关可以决定对其进行专门矫治教育。</p>
-
-                    </div>
+                    <p>其中引用频次最多的第十七条则是明确规定了不同年龄的未成年应当受到的相应的刑罚。</p>
+                    <p>而根据修改前的刑法规定，未满14周岁的未成年人，无需承担刑事责任。</p>
+                    <p>令人痛心的是，有的孩子犯罪后因未到刑事责任年龄免于刑罚，多年后居然再度犯案，且手法更加残暴。</p>
+                    <br/>
+                    <p>2020年12月26日全国人大常委会会议表决通过刑法修正案（十一），对刑事责任年龄相关规定作出调整。</p>
+                    <p>12至14周岁未成年人故意杀人等犯罪，将不再是刑事“免责人群”。让这些犯下重罪的“小恶魔”们受到应有的制裁。</p>
+                    <br/>
+                    <p>因不满法定刑事责任年龄不予刑事处罚的“问题孩子”，经专门教育指导委员会评估同意，教育行政部门会同公安机关可以决定对其进行专门矫治教育。</p>
                 </div>
             </div>
         </div>
@@ -206,7 +201,7 @@
         </div>
     </section>
 
-    <footer id="footer" class="">
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
