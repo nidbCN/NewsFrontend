@@ -1,86 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
     <title>首页 | 从背上书包到拿起屠刀，未成年犯罪几时休？</title>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/pe-icons.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/echarts.min.js"></script>
+
+    <script src="js/jquery.js"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <script src="js/jquery.js"></script>
-    <link rel="shortcut icon" href="images/ico/logo-dog.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/logo-dog.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/logo-dog.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/logo-dog.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/ico/logo-dog.png">
 
     <script type="text/javascript">
-
         jQuery(document).ready(function ($) {
             'use strict';
             jQuery('body').backstretch([
-                "images/bg/background_4.jpg"
+                "images/bg/background_4.jpg",
+
             ], {
                 duration: 5000,
-                fade: 500
+                fade: 500,
+                centeredY: true
             });
-
-
         });
     </script>
+    <style type="text/css">
+        .hui a:link {
+            color: rgb(255, 255, 255);
+            text-decoration-line: none;
+        }
+
+        .hui a:hover {
+            color: rgba(158, 50, 50, 0.856) !important;
+            text-decoration-line: none;
+        }
+    </style>
 </head>
 
 <body>
 <div id="preloader"></div>
-<header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
-    <div id="search-wrapper">
-        <div class="container">
-            <input id="search-box" placeholder="Search"/>
-        </div>
-    </div>
-    </div>
+<header class="navbar navbar-inverse navbar-fixed-top " role="banner">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">菜单</span>
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.html">
-                <h1><span class="bounce-in"><img src="images/ico/logo-dog.png" width="30px" height="30px"> </span>童模的异色世界
-                </h1>
-            </a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="page1.html">红色</a></li>
-                <li><a href="page2.html">灰色</a></li>
-                <li><a href="page3.html">彩色</a></li>
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="icon-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="page1.html">红色</a></li>
-                        <li><a href="page2.html">灰色</a></li>
-                        <li><a href="page3.html">彩色</a></li>
-                        <li class="active"><a href="page-another.html">敬请期待</a></li>
-                    </ul>
-                </li>
-                <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="page1.html">审判</a></li>
+                <li><a href="page2.html">法律</a></li>
+                <li><a href="page3.html">德育</a></li>
             </ul>
         </div>
     </div>
 </header>
-
 <section id="single-page-slider" class="no-margin">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -198,48 +183,23 @@
                     <div>
                         <p>追溯未成年犯罪行为外部原因，可以发现未成年犯罪发生的外部原因主要来自家庭、学校和社会环境影响。</p>
 
-
-                        <div>
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#tab_home" aria-controls="家庭" role="tab"
-                                                                          data-toggle="tab">Home</a></li>
-                                <li role="presentation"><a href="#tab_school" aria-controls="学校" role="tab"
-                                                           data-toggle="tab">Profile</a></li>
-                                <li role="presentation"><a href="#tab_society" aria-controls="社会" role="tab"
-                                                           data-toggle="tab">Messages</a></li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="tab_home">...</div>
-                                <div role="tabpanel" class="tab-pane" id="tab_school">...</div>
-                                <div role="tabpanel" class="tab-pane" id="tab_society">...</div>
-                                <div role="tabpanel" class="tab-pane" id="settings">...</div>
-                            </div>
-
-                        </div>
-
-
                         <div id="collapse_parent">
-
-
                             <button class="btn btn-primary" type="button" data-toggle="collapse"
                                     data-parent="#collapse_parent"
                                     data-target="#collapse_home" aria-expanded="false" aria-controls="collapse_home">
-                                家庭
+                                <i class="fa fa-home"></i> 家庭
                             </button>
                             <button class="btn btn-primary" type="button" data-toggle="collapse"
                                     data-parent="#collapse_parent"
                                     data-target="#collapse_school" aria-expanded="false"
                                     aria-controls="collapse_school">
-                                学校
+                                <i class="fa fa-graduation-cap"></i> 学校
                             </button>
                             <button class="btn btn-primary" type="button" data-toggle="collapse"
                                     data-parent="#collapse_parent"
                                     data-target="#collapse_society" aria-expanded="false"
                                     aria-controls="collapse_society">
-                                社会
+                                <i class="fa fa-bank"></i> 社会
                             </button>
                             <div class="collapse" id="collapse_home">
                                 <p>
