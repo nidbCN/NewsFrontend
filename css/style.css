@@ -20,7 +20,7 @@ p {
     font-size: 24px;
 }
 
-.my-title-author p {
+.my-title-author {
     color: #CD5656;
     font-size: 22px;
 }
@@ -45,6 +45,13 @@ p {
     width: 40%;
 }
 
+.my-no_block {
+    padding: 0  !important;
+}
+
+.my-block {
+    padding: 20px;
+}
 /*template css*/
 .clearfix {
     zoom: 1;
