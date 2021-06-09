@@ -21,7 +21,7 @@
     <![endif]-->
 
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
+        jQuery(document).ready(() => {
             'use strict';
             jQuery('body').backstretch([
                 "images/bg/background_3.jpg",
@@ -33,17 +33,6 @@
             });
         });
     </script>
-    <style type="text/css">
-        .hui a:link {
-            color: rgb(255, 255, 255);
-            text-decoration-line: none;
-        }
-
-        .hui a:hover {
-            color: rgba(158, 50, 50, 0.856) !important;
-            text-decoration-line: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -112,7 +101,7 @@
                     </div>
                     <br/>
                     <div class="center">
-                        <img src="images/data/results.gif"/>
+                        <img alt="results" src="images/data/results.gif"/>
                     </div>
                 </div>
             </div>
@@ -134,12 +123,11 @@
         </div>
     </section>
 
-    </section>
     <section class="white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
-                    <img style="width: 45%" src="images/data/punishments.png"/>
+                    <img alt="punishments" style="width: 45%" src="images/data/punishments.png"/>
                 </div>
             </div>
         </div>
@@ -160,7 +148,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center fade-up">
-                    <img src="images/data/time.png"/>
+                    <img alt="time" src="images/data/time.png"/>
                 </div>
             </div>
         </div>
@@ -226,7 +214,7 @@
                 </div>
                 <div class="col-sm-4">
                     <ul class="pull-right">
-                        <li><a id="gototop" class="gototop" href="page2.html"><i class="fa fa-chevron-up"></i></a></li>
+                        <li><a id="goToTop" class="goToTop" href="page2.html"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
                 </div>
             </div>
