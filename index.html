@@ -21,7 +21,7 @@
     <![endif]-->
 
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
+        jQuery(document).ready(() => {
             'use strict';
             jQuery('body').backstretch([
                 "images/bg/background.jpg",
@@ -33,21 +33,9 @@
             });
         });
     </script>
-    <style type="text/css">
-        .hui a:link {
-            color: rgb(255, 255, 255);
-            text-decoration-line: none;
-        }
-
-        .hui a:hover {
-            color: rgba(158, 50, 50, 0.856) !important;
-            text-decoration-line: none;
-        }
-    </style>
 </head>
 
 <body>
-<div id="preloader"></div>
 <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
     <div class="container">
         <div class="navbar-header">
@@ -55,6 +43,7 @@
                 <span class="sr-only">菜单</span>
                 <i class="fa fa-bars"></i>
             </button>
+            <h1>从背上书包到拿起屠刀，未成年犯罪几时休？</h1>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -75,16 +64,16 @@
                     <div class="row" style="margin-top: 15rem;">
                         <div class="col-sm-11">
                             <div class="col-sm-8">
-                                <div class="carousel-content center centered fade-down">
-                                    <b><p align="left" style="font-size: 24px;">“没有是非观的孩子是这个世界上最可怕的生物，</p>
-                                    </b>
-                                    <b><p style="font-size: 24px;">他们有好奇心、行动力、破坏力和《未成年人保护法》。”</p></b>
-                                    <b><p style="font-size: 22px;">——《亲爱的弗洛伊德》</p></b>
+                                <div class="my-title carousel-content center centered fade-down">
+                                    <p><b>“没有是非观的孩子是这个世界上最可怕的生物，</b></p>
+                                    <p><b>他们有好奇心、行动力、破坏力和《未成年人保护法》。”</b></p>
+                                    <p class="my-title-author"><b>——《亲爱的弗洛伊德》</b></p>
                                 </div>
                             </div>
                             <div class="carousel-content center centered" style="margin-top: 18rem;margin-left: 10rem;">
-                                <a class="btn btn-md animation center bounce-in" href="#services"><span
-                                        style="font-size: 25px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;继&nbsp;&nbsp;续&nbsp;&nbsp;&nbsp;</span><i
+                                <a class="btn btn-md animation center bounce-in"
+                                   style="border-color: #CD5656;color: #CD5656; font-size: 25px;"
+                                   href="#a_1"><span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;继&nbsp;&nbsp;续&nbsp;&nbsp;&nbsp;</span><i
                                         class="fa fa-arrow-down" aria-hidden="true"></i>&nbsp;&nbsp;</a>
                             </div>
                         </div>
@@ -96,12 +85,12 @@
 </section>
 
 <div id="content-wrapper">
-    <section id="services" class="white">
-        <div class="container">
+    <section id="a_1" class="white">
+        <div class="container fade-down">
             <div class="gap"></div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="center gap fade-down section-heading">
+                    <div class="center gap section-heading">
                         <h1><span class="bounce-in"></span>从背上书包到<span style="color: #CD5555">拿起屠刀</span></h1>
                         <br/>
                         <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未成年犯罪几时休？</h1>
@@ -111,31 +100,33 @@
         </div>
     </section>
 
-    <section id="stats" class="divider-section">
+    <section class="divider-section">
         <div class="gap"></div>
-        <div class="container">
+        <div class="container fade-down">
             <div class="row">
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-offset-1 col-md-3 col-xs-6">
                     <div class="center bounce-in">
-                        <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+                        <span class="stat-icon"><i class="fa fa-book"></i></span>
                         <h1><span class="counter">6479</span></h1>
                         <h3>法律文书</h3>
                     </div>
                 </div>
-                <div class="col-md-8 col-xs-6">
-                    <h3>我们研究了Alpha的6479条文书，以期敲开未成年犯罪世界的大门</h3>
+                <div class="col-md-7 col-xs-6">
+                    <br/>
+                    <h1>我们研究了Alpha的6479条文书，</h1>
+                    <h1>以期敲开未成年犯罪世界的大门</h1>
                 </div>
             </div>
         </div>
         <div class="gap"></div>
     </section>
 
-    <section id="portfolio" class="white">
+    <section class="white">
         <div class="gap"></div>
-        <div class="container">
+        <div class="container fade-down">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="center gap fade-down section-heading">
+                    <div class="center gap section-heading">
                         <h2 class="main-title">一个10岁女孩逝于荒野</h2>
                         <hr/>
                         <div>
@@ -149,7 +140,7 @@
                             <p>在此过程中，淇淇奋力抵抗，他恼羞成怒，用水果刀将淇淇捅刺了七刀，最终将她残忍杀害并丢尸灌木丛。</p>
                             <p>在发现淇淇的尸体时，蔡某也曾混迹在看热闹的人群里，不屑地说：“不就是死人吗，有什么大不了的？”</p>
                         </div>
-                        <img style="width: 80%;margin: 50px" src="images/data/time_line.png"/>
+                        <img alt="time line" style="width: 80%;margin: 50px" src="images/data/time_line.png"/>
                         <div>
                             <p>w020年1月，淇淇的妈妈正式向蔡某家人提请民事诉讼。</p>
                             <p>5月，法院开庭，蔡家人缺席。</p>
@@ -159,7 +150,6 @@
                             <p>在这条暗黑的路上，淇淇的妈妈倔强而孤独地走过。</p>
                             <p>她并不在乎诉讼结果里的经济赔偿，因为“孩子不是靠百八十万就能回来的，对他和他父母的惩罚还远远不够。”</p>
                             <p>但在看到这封道歉信时，忍不住失声痛哭，她已经等了太久。</p>
-
                         </div>
                     </div>
                 </div>
@@ -168,7 +158,7 @@
     </section>
 
     <section class="divider-section">
-        <div class="container">
+        <div class="container fade-down">
             <div class="row">
                 <div class="col-12">
                     <div class="center">
@@ -181,26 +171,22 @@
 
     <section class="white">
         <div class="gap"></div>
-        <div class="container">
+        <div class="container fade-down">
             <div class="row">
-                <div class="col-md-6">
-                    <img style="width: 100%" src="images/data/words_cloud.png"/>
-                </div>
-                <div class="col-md-6">
-                    <div class="gap fade-down section-heading">
-                        <div>
-                            <p>年轻的岁月迎风而来，恰似千树花开。</p>
-                            <p>未成年代表着简单和纯粹，他们的笑容最容易让人联想到风华正茂、意气风发。这样的年纪是比清风明月、草长莺飞更美好的事物。</p>
-                            <p>可是当这个词语与如此残忍的行凶手段和极其冷酷的犯罪心理联系在一起时，却不禁让人毛骨悚然。</p>
-                            <p>显然，为了避免更多“淇淇”受害，我们就要探究，像蔡某这样的孩子全国到底有多少？他们行为的产生原因有没有相关的规律和共性可循？我们能不能针对这些事情做些什么？</p>
-                            <p>为此，我们搜集到了Alpha案例库的6479个案例以及在律所的帮助下，从中窥探未成年犯罪的一角，以期驱散孩子们成长下的阴霾。</p>
-                        </div>
+                <div class="col-12 center">
+                    <img alt="words cloud" class="my-img my-img-lg" src="images/data/words_cloud.png"/>
+                    <br/>
+                    <div>
+                        <p>年轻的岁月迎风而来，恰似千树花开。</p>
+                        <p>未成年代表着简单和纯粹，他们的笑容最容易让人联想到风华正茂、意气风发。这样的年纪是比清风明月、草长莺飞更美好的事物。</p>
+                        <p>可是当这个词语与如此残忍的行凶手段和极其冷酷的犯罪心理联系在一起时，却不禁让人毛骨悚然。</p>
+                        <p>显然，为了避免更多“淇淇”受害，我们就要探究，像蔡某这样的孩子全国到底有多少？他们行为的产生原因有没有相关的规律和共性可循？我们能不能针对这些事情做些什么？</p>
+                        <p>为此，我们搜集到了Alpha案例库的6479个案例以及在律所的帮助下，从中窥探未成年犯罪的一角，以期驱散孩子们成长下的阴霾。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 </div>
 
 
@@ -217,7 +203,7 @@
         </div>
     </section>
 
-    <footer id="footer" class="">
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
@@ -225,7 +211,7 @@
                 </div>
                 <div class="col-sm-4">
                     <ul class="pull-right">
-                        <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                        <li><a id="goToTop" class="goToTop" href="#"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
                 </div>
             </div>
