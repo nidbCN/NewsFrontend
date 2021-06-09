@@ -1,190 +1,345 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
-    <title>德育：做浪子回头的温柔海岸</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-    <link href="css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="all"/>
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all"/>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>彩色 | 童模的异色世界</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="js/echarts.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/flexy-menu.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/ico/logo-dog.png">
 
-    <script>
-        addEventListener("load",
-            function () {
-                setTimeout(hideUrlBar, 0);
-            },
-            false);
-
-        function hideUrlBar() {
-            window.scrollTo(0, 1);
-        }
-
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({
-                        scrollTop: $(this.hash).offset().top
-                    },
-                    1000);
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/95.jpg"
+            ], {
+                duration: 5000,
+                fade: 500
             });
-        });
 
-        $(document).ready(function () {
-            $(".flexy-menu").flexymenu({
-                speed: 400,
-                indicator: true
-            });
-        });
 
-        $(function () {
-            $("#slider").responsiveSlides({
-                auto: true,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                pager: true,
-            });
         });
     </script>
 
+
 </head>
+<!--/head-->
 
 <body>
-<div class="banner">
-    <div class="container">
-        <div class="header">
-            <div class="logo"><a href="index.html">未成年犯罪<span>几时休？ </span></a></div>
-            <div class="top-nav">
-                <ul class="flexy-menu orange nav1">
-                    <li>
-                        <a class="active" href="index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="page2.html">法律</a>
-                    </li>
-                    <li>
-                        <a href="page3.html">德育</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix">
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+        <div id="search-wrapper">
+            <div class="container">
+                <input id="search-box" placeholder="Search">
             </div>
         </div>
-    </div>
-
-    <div class="slider">
-        <div class="caption">
-            <div class="callbacks_container">
-                <ul class="rslides" id="slider">
-                    <li>
-                        <h3>
-                            <span style="color: red;">“没有是非观的孩子是这个世界上最可怕的生物，</span>
-                            <br/>
-                            <span>他们有好奇心、行动力、破坏力和《未成年人保护法》。”</span>
-                        </h3>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1><span class="bounce-in"><img src="images/ico/logo-dog.png" width="30px" height="30px"> </span>童模的异色世界</h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="page1.html">红色</a></li>
+                    <li><a href="page2.html">灰色</a></li>
+                    <li><a href="page3.html">彩色</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="page1.html">红色</a></li>
+                            <li><a href="page2.html">灰色</a></li>
+                            <li><a href="page3.html">彩色</a></li>
+                            <li class="active"><a href="page-another.html">敬请期待</a></li>
+                        </ul>
                     </li>
+                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
                 </ul>
-                <br/>
-                <h3 style="color: white">——《亲爱的弗洛伊德》</h3>
-                <a class="readmore" href="#a_1">继续</a>
             </div>
         </div>
-    </div>
-</div>
+    </header>
+    <!--/header-->
 
-<div class="banner-bottom">
-    <a id="a_1"></a>
-    <div class="bnr-btm-left">
-        <h3>德育：做浪子回头的温柔海岸</h3>
-        <hr/>
-        <p>我们常常说解决很多事情，千万别走向一管就死一放就乱的怪圈，其实面对未成年人犯罪的预防和惩治也同样如此，强调严格惩治，让未成年人犯罪和成年人犯罪一样去担责，这不符合我们对未成年人保护的大趋势。</p>
-        <p>而反过来保护未成年人，也绝不是宽松溺爱犯了罪当没事儿，所以很多事情的进步，绝不可能一蹴而就，就是要在争议讨论协商的过程中朝一个更好的方向去走，但愿我们能缩短这个进程，少付出点代价。</p>
-        <p>——白岩松</p>
-        <br/><br/><br/> <br/><br/> <br/><br/>
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title"><span style="font-size: 60px;">彩&nbsp;&nbsp;色</span></h2>
+                                    <hr>
 
-    </div>
-    <div class="bnr-btm-right">
-        <p>距离蔡某蓄意杀害淇淇，转眼已经过去两年多。淇淇的尸体，仍然躺在殡仪馆里。</p>
-        <p>在失去女儿的第一周里，淇淇的妈妈茶饭不思，哭到瘫软。甚至开始自责——女儿在上美术班之前，妈妈正准备午睡。她只听到淇淇喊了一声：妈，我走了啊。</p>
-        <p>她没有想到那句话是女儿对她说的最后一句话。</p>
-        <p>蔡某家房子的阳台栏杆上一直挂着淇淇的照片和白布，有小区里的邻居自发前来祭奠，从未间断。</p>
-        <p>而我们又不禁思考：收容三年过后的蔡某，人生该如何迈向新的未来？如果他的父母在他心中的恶之花还未开始滋长时就采取措施干预、如果学校的德育曾在他心里埋下了一颗善良的种子，那他的人生还会像现在这样遍布狼藉吗？</p>
-        <p>
-            然时光难回头，但社会的监管却依旧不可松懈。我们依旧有责任坚持新修订的《预防未成年人犯罪法》的明确原则：预防为主、提前干预。未成年人的人生路还长，我们须怀人文关怀的一份柔情，相信他们的人生能重获曙光。我们应该采取未成年人利益最大化的基本理念，坚持德育和法治相结合的原则，防止未成年犯罪的最终发生。
-        </p>
-    </div>
-    <div class="clearfix"></div>
-</div>
+                                    <p> 阳光下，在草地上无忧无虑地奔跑，那样的笑容是属于小孩的纯真，太阳折射在他们的眼眸，散发出七彩的光芒。
+                                        <br> 有时候，也许只有你能决定你的孩子能否做回一个单纯的天使。
 
-<div class="bnr-about">
-    <div class="bnr-about-left">
-        <p>追溯未成年犯罪行为外部原因，可以发现未成年犯罪发生的外部原因主要来自家庭、学校和社会环境影响。</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
 
-        <p>
-            父母是孩子的第一任老师，也是预防未成年犯罪的直接责任人。家庭教育偏激、父母相处不和谐、家庭成员结构不完整，都会在未成年人心理健康和行为产生上产生不好的烙印。因此，未成年人的父母有义务营造一个充满爱与关怀的家庭环境，在发生问题时不能一味打骂，要主动和孩子沟通、引导，寻求正确的解决办法，这是非常重要的。</p>
-        <p>
-            学校是未成年人社会化的预热和正确三观养成的温床。学校加大德育课程的建设力度，追求德育和未成年心理健康辅导的效果和质量，对预防和杜绝未成年违法犯罪行为有积极作用。同时，针对未成年人的无意识模仿行为和不良习惯的养成，比如吸烟、酗酒、口角、打架等，也应该及时介入惩戒，“无因恶小而为之”，小错的及时纠正反省，是给未成年人厘清对错的边界，只有认识到行为的底线在哪里，才会不容易越界。</p>
+    <div id="content-wrapper">
+
+        <section id="about-us" class="white">
+            <div class="container" style="margin-top: -5rem;">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">做童模和快乐之间可以并存吗？</h2>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 fade-up">
+                        <div style="float: left;width: 40%;display:flex;">
+                            <div class='  fade-up'>
+                                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                    <!-- Bottom Carousel Indicators -->
+
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Carousel Slides / Quotes -->
+                                    <div class="carousel-inner">
+                                        <!-- Quote 1 -->
+                                        <div class="item active">
+
+                                            <div class="row">
+                                                <div class="center">
+                                                    <img class="img-responsive" src="images/team/tm1.jpg" style="width: 60rem;height:42rem;">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Quote 2 -->
+                                        <div class="item">
+
+                                            <div class="row">
+                                                <div class="center">
+                                                    <img class="img-responsive" src="images/team/tm2.jpg" style="width: 60rem;height:42rem;">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Quote 3 -->
+                                        <div class="item">
+
+                                            <div class="row">
+                                                <div class="center">
+                                                    <img class="img-responsive" src="images/team/tm9.jpg" style="width: 60rem;height:42rem;">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="float: right;width: 55%;">
+                            <p>云云抢在妈妈前面给出了自己的答案：“我觉得当童模也可以很开心呀。我挺喜欢拍照的，我以后想要当演员！”谈起梦想，云云的小脸蛋上就会激动得憋出红晕，玲姐似乎并没有让云云丧失一开始对镜头的喜爱。</p>
 
 
-    </div>
+                            <p>玲姐告诉我们，当意识到以前接下的一些通告会让孩子产生抵触心理，她向孩子承诺绝不在他们上学的时间接单，即使接单也不会超过4小时。她向孩子公开每一笔收入并且明确表示会存入银行，等到孩子十八岁之后再交回给他们。比起把孩子当成赚钱的工具，玲姐更倾向于将当童模视作孩子的一种人生阅历，“我会和孩子商量，让他们自己选择接什么单，去哪些地方。当他们有机会走出广东省，走出国门，看到更宽广的世界并且认识更多的人，他们将会获得自信，这个很重要，并不关乎钱多少的问题。</p>
+                            <p>当然，不是每个云云都能拥有一个像玲姐一样的妈妈，这意味着总有一些童模要面临着被当成赚钱工具的命运。我们揭露的并不是童模产业本身，而是埋藏在这些产业深处的贪欲与人心。要知道，只有家长自己才能决定孩子能不能做回一个快乐的天使，重新拥有彩色的童年。
+                            </p>
+                        </div>
+                    </div>
 
-    <div class="bnr-about-right">
-    </div>
-    <div class="clearfix"></div>
-</div>
+                </div>
+        </section>
+        <section id="stats" class="white">
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">最好的祝愿献给你</h2>
+                        <hr>
+                        <p>聆听孩子的期望，给予最好的陪伴</p>
+                        <div class="gap"></div>
+                    </div>
+                    <div class='col-md-offset-2 col-md-8 fade-up'>
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel2">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#quote-carousel2" data-slide-to="1"></li>
+                                <li data-target="#quote-carousel2" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner">
+                                <!-- Quote 1 -->
+                                <div class="item active">
 
-<div class="banner-bottom">
-    <div class="bnr-btm-left2">
-        <div style="height: 300px" id="chart_2"></div>
-        <p>
-            预防未成年犯罪是一个系统的过程，需要社会各机构团体怀着最大的关怀和爱心往一个方向努力，不弃微末、久久为功。但关爱不等于纵容，针对不同类型的未成年犯罪，我们也要坚决支持“法治”，坚决支持各司法机关依据法律法规做出最公正合理的判决。参照世界各国关于未成年犯罪的制度设计，我们可以看到欧美国家主要采用社区预防，通过地方层面的青年办事处承担责任；日本采用微罪处分制度，对于微小的错误即使终止刑罚也要严厉训诫；我国台湾地区主要采用问题家庭辅导计划，从根本上溯源和杜绝，都对我们有一定的启发和指导意义。</p>
-    </div>
-    <div class="bnr-btm-right2">
-        <div style="height: 300px" id="chart_3"></div>
-        <p>预防未成年人犯罪，不仅是法律问题，更是社会问题。唯有凝聚全社会力量，完善教育机制、加强心理干预、守牢法律底线，才能更好护航孩子身心健康，让祖国的花朵茁壮成长。
-        </p>
-        <p>未成年人不是可怕的怪物，他们有世界上最美的笑容，他们有最滚烫和明亮的希望。他们在困难和挫折中淬炼坚强的容颜，在生活的熔炉中体现超凡的智慧和勇敢，他们每一个人，都有花一样灿烂的明天。
-        </p>
-    </div>
-    <div class="clearfix"></div>
-</div>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-responsive" src="images/team/tm7.jpg" style="width: 100px;height:100px;">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>希望我家小清清一直可爱活泼下去</p>
+                                            <small>清清爸</small>
+                                        </div>
+                                    </div>
 
-<div class="footer">
-    <div class="container">
-        <p>参考文献：</p>
-        <p>《如何有效应对未成年人违法犯罪》刘宗珍</p>
-        <p>《我国刑事犯罪未成年人的结构性特征：省略2019年数据的社会学分析》宋全成</p>
-        <p>《未成年人违法犯罪的现状、原因及预防对策分析》朱鑫浩</p>
-        <p>《未成年人犯罪三维防控体系的构建》姬艾佟</p>
-        <hr/>
-        <p>成员：</p>
-        <hr/>
-        <p>数据来源：数据来自Alpha案例库、北大法宝、无讼网、知网、人民日报以及部分人工整理而成，如有错误请批评指正。</p>
-        <hr/>
-        <p>Copyright &copy; 2020 未成年犯罪几时休</p>
-    </div>
-</div>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
 
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-responsive" src="images/team/tm5.jpg" style="width: 100px;height:100px;">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>可惜我家莎莎总是一副气嘟嘟的样子，害别人总以为我又欺负她了</p>
+                                            <small>莎莎爸</small>
+                                        </div>
+                                    </div>
 
-<script>
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $().UItoTop({easingType: 'easeOutQuart'});
-    });
-</script>
-<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<script src="js/bootstrap.min.js"></script>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-responsive" src="images/team/tm13.jpg" style="width: 100px;height:100px;">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>空空昨天在沙滩偷拍的小女孩照片还挺好看的，这孩子看来有摄影天赋，不过只拍小女孩是什么意思，你才六岁啊！</p>
+                                            <small>空空妈妈</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+            </div>
+        </section>
+        </div>
+
+        <div id="footer-wrapper">
+            <section id="bottom" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 about-us-widget">
+                            <h4>数据来源声明</h4>
+                            <p> 童模数据来源于宝贝模特网，采访素材获得采访对象授权，图片素材来源于公开素材</p>
+                        </div>
+                        <!--/.col-md-3-->
+
+                        <div class="col-md-3 col-sm-6 center">
+                            <h4>制作成员</h4>
+                            <div>
+                                <ul class="arrow">
+                                    <li><a>团队组长：蒲韵莎</a></li>
+                                    <li><a>团队成员：李汉清</a></li>
+                                    <li><a>团队成员：王泽生</a></li>
+                                    <li><a>指导老师：吴小坤</a></li>
+                                    <li><a>华南理工大学新闻与传播学院</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.col-md-3-->
+
+                        <div class="col-md-3 col-sm-6">
+                            <h4>相关推荐</h4>
+                            <div>
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="widget-img" src="images/team/tm3.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="media-heading"><a href="https://www.sohu.com/a/307900381_100240657">毒眸报道|2000亿的童装市场与混乱的童模行业 </a></span>
+                                        <small class="muted">童模行业深度报道</small>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="widget-img" src="images/team/tm6.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="media-heading"><a href="https://www.sohu.com/a/307607323_768235">GQ报道 | 逐梦童模镇</a></span>
+                                        <small class="muted">童模人物特写</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-3-->
+
+                        <div class="col-md-3 col-sm-6 center">
+                            <img style="height:15rem;weight:15rem;" src="images/team/tx.png" alt="">
+                        </div>
+                        <!--/.col-md-3-->
+                    </div>
+                </div>
+            </section>
+            <!--/#bottom-->
+
+            <footer id="footer" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            &copy; 2020 童模的异色世界.
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="pull-right">
+                                <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                                <!--#gototop-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--/#footer-->
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/init.js"></script>
 </body>
+
 </html>

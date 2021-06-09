@@ -1,905 +1,367 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
-    <title>法律：为脱缰的孩子悬崖勒马</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-    <link href="css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="all"/>
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all"/>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>灰色 | 童模的异色世界</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="js/echarts.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/flexy-menu.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/ico/logo-dog.png">
 
-    <script>
-        addEventListener("load",
-            function () {
-                setTimeout(hideUrlBar, 0);
-            },
-            false);
-
-        function hideUrlBar() {
-            window.scrollTo(0, 1);
-        }
-
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({
-                        scrollTop: $(this.hash).offset().top
-                    },
-                    1000);
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/94.jpg"
+            ], {
+                duration: 5000,
+                fade: 500
             });
-        });
 
-        $(document).ready(function () {
-            $(".flexy-menu").flexymenu({
-                speed: 400,
-                indicator: true
-            });
-        });
 
-        $(function () {
-            $("#slider").responsiveSlides({
-                auto: true,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                pager: true,
-            });
         });
     </script>
+    <style type="text/css">
+        .cai a:link {
+            color: rgb(255, 255, 255);
+            text-decoration-line: none;
+        }
+        
+        .cai a:hover {
+            color: rgba(250, 213, 2, 0.856)!important;
+            text-decoration-line: none;
+        }
+    </style>
 
 </head>
+<!--/head-->
 
 <body>
-<div class="banner">
-    <div class="container">
-        <div class="header">
-            <div class="logo"><a href="index.html">未成年犯罪<span>几时休？ </span></a></div>
-            <div class="top-nav">
-                <ul class="flexy-menu orange nav1">
-                    <li>
-                        <a class="active" href="index.html">首页</a>
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+        <div id="search-wrapper">
+            <div class="container">
+                <input id="search-box" placeholder="Search">
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1><span class="bounce-in"><img src="images/ico/logo-dog.png" width="30px" height="30px"> </span>童模的异色世界</h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="page1.html">红色</a></li>
+                    <li><a href="page2.html">灰色</a></li>
+                    <li><a href="page3.html">彩色</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="page1.html">红色</a></li>
+                            <li><a href="page2.html">灰色</a></li>
+                            <li><a href="page3.html">彩色</a></li>
+                            <li class="active"><a href="page-another.html">敬请期待</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="page2.html">法律</a>
-                    </li>
-                    <li>
-                        <a href="page3.html">德育</a>
-                    </li>
+                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
                 </ul>
             </div>
-            <div class="clearfix">
+        </div>
+    </header>
+    <!--/header-->
+
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title"><span style="font-size: 60px;">灰&nbsp;&nbsp;色</span></h2>
+                                    <hr>
+
+                                    <p>也许一些童模的父母如玲姐这般，初心是想让孩子得到更好的锻炼；而还有一些父母一心想着趁着孩子年龄尚小，大赚特赚。
+                                        <br>但是无论是以上哪种父母，被贴上赚取灰色收入的标签页在所难免。更有一部分家长为了赚取巨利，已经在合法与非法的灰色地带中游走。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
             </div>
+            <!--/.carousel-inner-->
         </div>
-    </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
 
-    <div class="slider">
-        <div class="caption">
-            <div class="callbacks_container">
-                <ul class="rslides" id="slider">
-                    <li>
-                        <h3>
-                            <span style="color: red;">“没有是非观的孩子是这个世界上最可怕的生物，</span>
-                            <br/>
-                            <span>他们有好奇心、行动力、破坏力和《未成年人保护法》。”</span>
-                        </h3>
-                    </li>
-                </ul>
-                <br/>
-                <h3 style="color: white">——《亲爱的弗洛伊德》</h3>
-                <a class="readmore" href="#a_1">继续</a>
-            </div>
+    <div id="content-wrapper">
+
+        <section id="about-us" class="white">
+            <div class="container" style="margin-top: -5rem;">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">灰色收入</h2>
+                            <hr>
+                            <p>没有明确界定的疯狂吸金</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 fade-up">
+                        <p>玲姐向我们透露，云云现在的身价在广州接通告，一个小时大概500元，如果拍四个小时，就是2000元。这是一份相当可观的收入。</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 fade-up center" style="height: 50rem;">
+                        <p align="center" style="font-size: 3rem;">中国各地区平均工资水平图</p>
+                        <iframe width="100%" height="90%" src="https://maplab.amap.com/share/mapv/bc286faed39c55ce0272031a9935ee06"></iframe>
+                        <p align="right" style="margin-right: 3rem;">数据来源：salarycalculator.sinaapp.com（五险一金及税后工资计算器）</p>
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-top: 5rem;">
+                    <div class="col-md-12 fade-up">
+                        <p>基于272248份样本调查可得，2019年广州市的薪资水平有50%以上集中于3k-6k的区间，而有70%以上集中于3k-10k的区间。以云云每天2000元收入的保守估计，他只需要一个月里拍摄5天就可以超过70%广州居民的工资水平了。这种强烈对比下的“灰色收入“，不知让多少”围墙外“的家长趋之若鹜。2020年5月28日，李克强总理在记者会上披露了三个数字，“我们人均年收入是3万元人民币，不过有6亿人每个月的收入也就1000元。” </p>
+                        <p><span style="font-weight: bold;">而只要家长狠狠心，把孩子送到织里那样的地方一天拍上100套，以1件衣服100元计算，孩子这一天的收入就可以抵得上多少人一年下来都不一定赚到的钱。</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 fade-up center" style="height: 50rem; margin-top: 5rem;">
+                        <img src="images/team/ertong2.png" width="90%" height="95%">
+                    </div>
+
+                </div>
+
+                <div class="row fade-down" style="margin-top: 5rem;">
+                    <div class="col-md-12 fade-down">
+                        <p>更进一步说，童模这种独特的产业模式是没有尽头的，它的崛起也要得益于另一个朝阳行业——童装行业。从2011年开始，童装行业的市场规模开始不断扩展，经预测，到2023年其市场规模可实现翻一番的跃升。作为童装行业的衍生行业，只要童装行业方兴未艾，童模行业依然会迎来一个又一个黄金发展期。前有童装护航，后有电商加持，不断扩张的市场规模为童模家长开辟出一座灰色收入的独特金矿。</p>
+
+                    </div>
+                </div>
+
+                <div class="gap"></div>
+                <div class="centerfade-down section-heading center">
+                    <h2 class="main-title">灰色地带</h2>
+                    <hr>
+                    <p>游走于不完善的法律边缘</p>
+                </div>
+                <div class="gap"></div>
+
+                <div class="row" style="margin-top: 5rem;">
+                    <div class="col-md-12 fade-up">
+                        <p>市场决定需求，庞大的童装市场体量预示着童模这样的灰色收入仍能持续飙高。而正由于此，它成为了许多家长眼中的香饽饽，大量的家长不断涌入宝贝模特网成为他们的注册用户。甚至，会有家长不惜放弃自己的职业和孩子学习的时间，让孩子成为一名全职的童模。</p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  fade-up" style="margin-top: 5rem;">
+                        <p><span style="font-size: 25px;font-weight: bolder;">外国父母的吸金石</span> </p>
+                        <p>玲姐正是在片场中认识了这样一对父母。两年前，罗拉克和他的丈夫放弃了在乌克兰的工作，带着孩子丽卡达来到中国当起了童模。这是孤注一掷的决定，他们为此费尽了不少心机。所幸，高加索独特的人种优势为孩子的外貌加了不少分，丽卡达深受着中国“老板“的喜爱。
+
+                            <p>中国的童装市场确实更偏爱外国面孔的童模。就在宝贝模特网上，在对国籍有明确要求的通告中，<span style="font-weight: bold;">要求是外籍童模和混血儿童模的共达34.5%，要求是纯外籍童模竟也高达13.7%。然而，和13.7%的外国国籍需求相比，真正的注册外籍童模不过只有9.3%，这造成了供不应求的局面。</span>许多商家正是酷爱那种欧美人种的外貌，白皮，高鼻梁，高眼睛，看上去俨然一个“洋娃娃”的模样。也正是因为这些商家的偏爱，才有机会让这些来自乌克兰的父母有机可乘。“在中国，他们是分不清欧美的小孩子和我们乌克兰的小孩长相上有什么区别的”。许多乌克兰的父母深谙此道。</span>。
+                            </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12  fade-down center" style="margin-top: 5rem;height: 50rem;">
+                        <img src="images/team/ertong5.png" width="70%" height="100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12  fade-up">
+
+                        <p>后来，这对乌克兰父母甚至不再让孩子上学，每天带着孩子跑大大小小的赚钱。<span style="font-weight: bold;">孩子已然论为父母在中国捞金的吸金石。</span>
+
+                            <p> 这是玲姐难以想象的事情。“有时候你不知道这些父母到底是出于贪婪，还是出于单纯的生存愿望。“据乌克兰国家统计署数据显示，9月，乌克兰全职雇员的平均实际工资为9042格里夫纳， 折算为人民币仅为2624元。比乌克兰稍微好一点的还有俄罗斯，2019年8月俄罗斯工人平均工资为44961卢布，折算为人民币大概为4941元。
+                            </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  fade-up" style="margin-top: 5rem;">
+                        <p><span style="font-size: 25px;font-weight: bolder;">法律边界的疯狂试探</span> </p>
+                        <p>诚然，为了更好的生活放弃自己的工作到异国淘金，是无可非议的，但一旦让孩子辍学成为专职的童模，就不仅仅是一个自由的选择这么简单了。不同的国家对于童模的规定都不尽相同，但是都会对“利用孩子“做童工“的灰色行为“加以严格的约束。以法国为例，他们对童模拍摄时长的要求为严格的4个小时，只要在4个小时以上皆算违法。而在中国杭州，也于2019年5月出台了《关于规范童模活动保护未成年人合法权益的意见》。《意见》明确规定，在童模活动中，不得连续使用童模超过一周或累计超过一个月，导致童模辍学或变相辍学；不得连续活动超过4小时。
+                            <span style="font-weight: bold;">可想，那些毫不顾忌高拍摄时长对孩子身体的损害，甚至让孩子辍学的父母，已经半只脚踏入了违法的危机之中。</span>
+
+                        </p>
+                    </div>
+                </div>
+
+                <section id="portfolio" class="center">
+
+                    <div class="row col-md-12">
+                        <div class="gap"></div>
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">部分国家关于童模的法律规定</h2>
+                            <hr>
+
+                        </div>
+                        <ul class="portfolio-filter fade-down center " style="background-color: rgb(88, 88, 88);">
+                            <li><a class="btn btn-outlined active" href="#" data-filter="*" style="font-size: 20px;">全部</a></li>
+                            <li><a class="btn btn-outlined" href="#" data-filter=".aa" style="font-size: 20px;">亚洲</a></li>
+                            <li><a class="btn btn-outlined" href="#" data-filter=".ab" style="font-size: 20px;">美洲</a></li>
+                            <li><a class="btn btn-outlined" href="#" data-filter=".as" style="font-size: 20px;">欧洲</a></li>
+
+                        </ul>
+                        <!--/#portfolio-filter-->
+                        <div class="col-md-12" style="margin-left:2rem;">
+                            <ul class="portfolio-items col-3 isotope fade-up">
+                                <li class="portfolio-item as isotope-item">
+                                    <div class="item-inner">
+                                        <img src="images/portfolio/l1.jpg" alt="">
+                                        <h5>法国</h5>
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined" href="images/portfolio/l2.jpg" rel="prettyPhoto">
+                                                <p style="color: black;">3岁之前，童模的工作时间每天<br>不能超过1小时，1周不能超过2小时；<br>3到6岁的童模每周工作3个小时……
+                                                </p><i>点击查看详情</i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--/.portfolio-item-->
+                                <li class="portfolio-item joomla aa isotope-item">
+                                    <div class="item-inner">
+                                        <img src="images/portfolio/l3.jpg" alt="">
+                                        <h5>韩国</h5>
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined" href="images/portfolio/l4.jpg" rel="prettyPhoto">
+                                                <p style="color: black;">韩国所有演艺公司、电视台禁止让<br>未成年艺人从事夜间演出、<br>拍摄等演艺活动……</p><i>点击查看详情</i></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--/.portfolio-item-->
+                                <li class="portfolio-item bootstrap ab isotope-item">
+                                    <div class="item-inner">
+                                        <img src="images/portfolio/l7.jpg" alt="">
+                                        <h5>加拿大</h5>
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined" href="images/portfolio/l8.jpg" rel="prettyPhoto">
+                                                <p style="color: black;">禁止招用15天以下的儿童参与<br>任何拍摄活动。<br> 禁止招用两岁半以下的儿童……
+                                                </p><i>点击查看详情</i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--/.portfolio-item-->
+                                <li class="portfolio-item joomla ab apps isotope-item">
+                                    <div class="item-inner">
+                                        <img src="images/portfolio/l9.jpg" alt="">
+                                        <h5>美国</h5>
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined" href="images/portfolio/l10.jpg" rel="prettyPhoto">
+                                                <p style="color: black;">2岁-5岁的童模，在纽约每天工作<br>总时长不超过6个小时，这中间<br>还包括吃饭、休息等……</p><i>点击查看详情</i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--/.portfolio-item-->
+                                <li class="portfolio-item joomla aa isotope-item">
+                                    <div class="item-inner">
+                                        <img src="images/portfolio/l11.jpg" alt="">
+                                        <h5>印度</h5>
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined" href="images/portfolio/l12.jpg" rel="prettyPhoto">
+                                                <p style="color: black;">必须向当地部门申请到相关许可<br>必须提供儿童的基本信息，父母<br>或者监护人的许可……
+
+                                                </p><i>点击查看详情</i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--/.portfolio-item-->
+                                <li class="portfolio-item wordpress as isotope-item">
+                                    <div class="item-inner">
+                                        <img src="images/portfolio/l13.jpg" alt="">
+                                        <h5>英国</h5>
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined" href="images/portfolio/l14.jpg" rel="prettyPhoto">
+                                                <p style="color: black;">《广告标准准则》<br>>不得将儿童作为广告对象</p><i>点击查看详情</i></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--/.portfolio-item-->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--/#meet-the-team-->
+
+
+
+        </section>
         </div>
-    </div>
-</div>
 
-<div class="banner-bottom">
-    <a id="a_1"></a>
-    <div class="bnr-btm-left">
-        <h3>法律：为脱缰的孩子悬崖勒马</h3>
-        <hr/>
-        <div>
-            <p>淇淇遇害后，根据我国《刑法》规定，未成年人年满16周岁需负刑事责任，故意杀人、强奸等八类刑事犯罪，追责年龄有所降低，但仍限制在14岁到16岁。</p>
-            <p>蔡某作案情节恶劣，但因年龄未满14周岁，仍然属于无刑事责任行为能力人，所以依法被判收容三年。</p>
-            <p>那么对未成年人犯罪案件中都尝到了哪些苦果呢？</p>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+        <div id="footer-wrapper">
+            <section id="bottom" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6 center">
+
+                            <p>然而，这真的是童模世界的孩子和家长想要的吗？家长走不出的灰是孩子心头上的红，何时才能迎来童模世界的彩色？</p>
+                            <hr width="60%" size="1px">
+                            <h4 style="font-size: 48px;"><span class="cai"><a class="cai" href="page3.html"> 彩&nbsp;&nbsp;色</a></span> </h4>
+                        </div>
+                        <!--/.col-md-3-->
+                    </div>
+                </div>
+            </section>
+            <!--/#bottom-->
+
+            <footer id="footer" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            &copy; 2020 童模的异色世界.
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="pull-right">
+                                <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                                <!--#gototop-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--/#footer-->
         </div>
-    </div>
-    <div class="bnr-btm-right">
-        <div style="height: 400px" id="chart_1"></div>
-    </div>
-    <div class="clearfix"></div>
-</div>
 
-<div class="bnr-about">
-    <div class="bnr-about-left">
-        <h3>刑罚处罚</h3>
-        <p>在我国，刑罚处罚主要包括主刑和附加刑两部分。</p>
-        <p>主刑是对犯罪适用的主要刑罚办法，附加刑是补充主刑适用的刑罚办法。</p>
-    </div>
-
-    <div class="bnr-about-right">
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="banner-bottom">
-    <div class="bnr-btm-left2">
-        <div style="height: 300px" id="chart_2"></div>
-        <h4>主刑</h4>
-        <p>具体到未成年犯罪，主刑包括有期徒刑、拘役、无期徒刑、管制、死刑四类办法，适用案件数量依次递减；</p>
-    </div>
-    <div class="bnr-btm-right2">
-        <div style="height: 300px" id="chart_3"></div>
-        <h4>附加刑</h4>
-        <p>附加刑包括处罚金、剥夺政治权利、没收财产和驱逐出境，其中处罚金是针对未成年犯罪案件常用的附加刑刑罚手段。</p>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="bnr-about">
-    <div class="bnr-about-left">
-        <h3>刑罚处罚</h3>
-        <p>在我国，刑罚处罚主要包括主刑和附加刑两部分。</p>
-        <p>主刑是对犯罪适用的主要刑罚办法，附加刑是补充主刑适用的刑罚办法。</p>
-    </div>
-
-    <div class="bnr-about-right">
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="banner-bottom">
-    <a id="a_1"></a>
-    <div class="bnr-btm-left">
-        <h3>审理期限</h3>
-        <p>从审判期限方面看，未成年犯罪案件主要在30-90天内审理结束。从侧面也发映出了未成年犯罪的案情一般较为简单，有章可循、有法可依，所以审理过程按部就班、较少冗余。</p>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </div>
-    <div class="bnr-btm-right">
-        <div style="height: 500px;" id="chart_4"></div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="banner-bottom">
-    <div class="bnr-btm-left2">
-        <div style="height: 1000px;width: 800px" id="chart_5"></div>
-        <a class="readmore more" href="page3.html">德育：做浪子回头的温柔海岸</a>
-    </div>
-    <div class="bnr-btm-right2">
-
-            <h3>法条统计</h3>
-            <p>
-                不论在任何犯罪行为中，法律都是至高无上的一环。尤其是在未成年人犯罪这样一个敏感的地带里，法律应该发挥更好的作用规范未成年人的发展。在深度了解了未成年人犯罪案件的基本情况之后，我们对未成年人犯罪案件中引用的高频法条进行了统计。</p>
-
-            <p>
-                其中引用频次最多的第十七条则是明确规定了不同年龄的未成年应当受到的相应的刑罚。而根据修改前的刑法规定，未满14周岁的未成年人，无需承担刑事责任。令人痛心的是，有的孩子犯罪后因未到刑事责任年龄免于刑罚，多年后居然再度犯案，且手法更加残暴。</p>
-            <p>
-                2020年12月26日全国人大常委会会议表决通过刑法修正案（十一），对刑事责任年龄相关规定作出调整。12至14周岁未成年人故意杀人等犯罪，将不再是刑事“免责人群”。让这些犯下重罪的“小恶魔”们受到应有的制裁。</p>
-            <p>因不满法定刑事责任年龄不予刑事处罚的“问题孩子”，经专门教育指导委员会评估同意，教育行政部门会同公安机关可以决定对其进行专门矫治教育。</p>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-
-<div class="footer">
-    <div class="container">
-        <p>Copyright &copy; 2020 未成年犯罪几时休</p>
-    </div>
-</div>
-
-
-<script>
-    const chart_1 = echarts.init($("#chart_1")[0]);
-    const chart_2 = echarts.init($("#chart_2")[0]);
-    const chart_3 = echarts.init($("#chart_3")[0]);
-    const chart_4 = echarts.init($("#chart_4")[0]);
-    const chart_5 = echarts.init($("#chart_5")[0]);
-
-    const chart_1_option = {
-        tooltip: {
-            trigger: 'item',
-            formatter: '{a} <br/>{b}:{d}%'
-        },
-        series: [
-            {
-                name: '二审裁判结果',
-                type: 'pie',
-                radius: [0, '20%'],
-                label: {
-                    position: 'inner',
-                    fontSize: 14,
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [
-                    {value: 0.7017, name: '维持原判'},
-                    {value: 0.1794, name: '改判'},
-                    {value: 0.0931, name: '其他'},
-                    {value: 0.0149, name: '发回重审'},
-                    {value: 0.0109, name: '撤回上述'}
-                ]
-            },
-            {
-                name: '再审裁判结果',
-                type: 'pie',
-                radius: ['35%', '50%'],
-                label: {
-                    position: 'inner',
-                    fontSize: 14,
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [
-                    {value: 0.0948, name: '维持原判'},
-                    {value: 0.5776, name: '改判'},
-                    {value: 0.3276, name: '其他'}
-                ]
-            },
-            {
-                name: '执行裁判结果',
-                type: 'pie',
-                radius: ['65%', '80%'],
-                label: {
-                    position: 'inner',
-                    fontSize: 14,
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [
-                    {value: 0.5, name: '终结本次执行程序'},
-                    {value: 0.2, name: '指定/提级执行'},
-                    {value: 0.2, name: '驳回申请'},
-                    {value: 0.1, name: '终结执行'}
-                ]
-            },
-        ]
-    };
-    const chart_2_option = {
-        title: {
-            text: "主刑"
-        },
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow'
-            },
-            formatter: "{b}:{c}"
-        },
-        xAxis: {
-            type: 'category',
-            data: ['有期徒刑', '拘役', '无期徒刑', '管制', '死刑']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [{
-            data: [4774, 747, 126, 97, 75],
-            type: 'bar'
-        }]
-    };
-    const chart_3_option = {
-        title: {
-            text: "附加刑"
-        },
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow'
-            },
-            formatter: "{b}:{c}"
-        },
-        xAxis: {
-            type: 'category',
-            data: ['罚金', '剥夺政治权利', '没收财产', '驱逐出境']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [{
-            data: [3421, 380, 118, 1],
-            type: 'bar'
-        }]
-    };
-    const chart_4_option = {
-        xAxis: {
-            data: ['20天以内', '31-90天', '91-180天', '181-365天', '365天以上'],
-        },
-        yAxis: [
-            {
-                splitLine: {
-                    show: false,
-                },
-            },
-        ],
-        series: [
-            {
-                type: 'pictorialBar',
-                barCategoryGap: '0%',
-                symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
-                label: {
-                    show: true,
-                    position: 'top',
-                    distance: 15,
-                    color: '#A62C12',
-                    fontWeight: 'bolder',
-                    fontSize: 15,
-                },
-                itemStyle: {
-                    normal: {
-                        color: {
-                            type: 'linear',
-                            x: 0,
-                            y: 0,
-                            x2: 0,
-                            y2: 1,
-                            colorStops: [
-                                {
-                                    offset: 0,
-                                    color: '#652D06',
-                                },
-                                {
-                                    offset: 1,
-                                    color: '#FF7110',
-                                },
-                            ],
-                        },
-                    },
-                    emphasis: {
-                        opacity: 1,
-                    },
-                },
-                data: [1685, 2018, 440, 172, 69],
-            },
-        ],
-    };
-    const chart_5_option = {
-        title: {
-            text: '一图了解刑事案件高频引用法条',
-            left: 'center',
-            textStyle: {
-                fontSize: 36,
-                textBorderWidth: 0.8,
-            },
-        },
-        xAxis: {
-            min: 0,
-            max: 1000,
-            show: false,
-            type: 'value',
-        },
-        yAxis: {
-            min: 0,
-            max: 1000,
-            show: false,
-            type: 'value',
-        },
-        legend: {
-            left: 'right',
-            top: 'bottom',
-            orient: 'vertical',
-            textStyle: {
-                color: 'write',
-                fontSize: 18,
-            },
-            data: [
-                {
-                    name: '法条',
-                },
-            ],
-        },
-        tooltip: {
-            enterable: true,
-            textStyle: {
-                color: '#000',
-                decoration: 'none',
-            },
-        },
-        series: [
-            {
-                name: '法条',
-                type: 'graph',
-                draggable: false,
-                coordinateSystem: 'cartesian2d',
-                itemStyle: {
-                    color: '#99cc99',
-                },
-                label: {
-                    show: true,
-                    position: 'right',
-                    fontSize: 12,
-                },
-                data: [
-                    {
-                        name: '中华人民共和国刑法（2011修正）',
-                        value: [250, 850],
-                        label: {
-                            position: 'left',
-                            offset: [-30, 0],
-                        },
-                        symbolSize: 50,
-                    },
-                    {
-                        name: '第十七条第三款',
-                        value: [650, 1000, 1350],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二十五条第一款',
-                        value: [650, 970, 1193],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第六十七条第三款',
-                        value: [650, 940, 1036],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第十七条第一款',
-                        value: [650, 910, 1029],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第五十二条',
-                        value: [650, 880, 859],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二百六十四条',
-                        value: [650, 850, 810],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第五十三条',
-                        value: [650, 820, 684],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第六十四条',
-                        value: [650, 790, 603],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二十六条第一款',
-                        value: [650, 760, 601],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二十七条',
-                        value: [650, 730, 547],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第六十七条第一款',
-                        value: [650, 700, 527],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二十六条第四款',
-                        value: [650, 670, 516],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '中华人民共和国刑法（2015修正）',
-                        value: [250, 600],
-                        symbolSize: 50,
-                        label: {
-                            position: 'left',
-                            offset: [-30, 0],
-                        },
-                    },
-                    {
-                        name: '第六十七条第三款 ',
-                        value: [650, 620, 827],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第十七条第三款 ',
-                        value: [650, 590, 625],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二十五条第一款 ',
-                        value: [650, 560, 594],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '中华人民共和国刑法（2017修正）',
-                        value: [250, 500],
-                        symbolSize: 40,
-                        label: {
-                            position: 'left',
-                            offset: [-30, 0],
-                        },
-                    },
-                    {
-                        name: '第六十七条第三款  ',
-                        value: [650, 510, 708],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第二十五条第一款  ',
-                        value: [650, 480, 536],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '中华人民共和国刑法（1997修订）',
-                        value: [250, 350],
-                        symbolSize: 30,
-                        label: {
-                            position: 'left',
-                            offset: [-30, 0],
-                        },
-                    },
-                    {
-                        name: '第十七条第三款  ',
-                        value: [650, 370, 586],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                    {
-                        name: '第十七条第一款  ',
-                        value: [650, 340, 465],
-                        symbolSize: 15,
-                        tooltip: {
-                            show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
-                        },
-                    },
-                ],
-            },
-            {
-                name: '法条',
-                type: 'effectScatter',
-                coordinateSystem: 'cartesian2d',
-                silent: true,
-                rippleEffect: {
-                    brushType: 'stroke',
-                    scale: 1.7,
-                },
-                itemStyle: {
-                    color: '#99cc99',
-                },
-                // 点
-                data: [
-                    {
-                        value: [250, 850],
-                        symbolSize: 60,
-                    },
-                    {
-                        value: [250, 600],
-                        symbolSize: 50,
-                    },
-                    {
-                        value: [250, 500],
-                        symbolSize: 40,
-                    },
-                    {
-                        value: [250, 350],
-                        symbolSize: 30,
-                    },
-                ],
-            },
-            {
-                name: '法条',
-                type: 'lines',
-                coordinateSystem: 'cartesian2d',
-                zlevel: 2,
-                effect: {
-                    show: true,
-                    symbolSize: 10,
-                    symbol: 'triangle',
-                },
-                tooltip: {
-                    show: false,
-                },
-                lineStyle: {
-                    curveness: 0.1,
-                    opacity: 0.2,
-                    color: new echarts.graphic.LinearGradient(
-                        0,
-                        0,
-                        0,
-                        1,
-                        [
-                            {
-                                offset: 0,
-                                color: '#58B3CC',
-                            },
-                            {
-                                offset: 1,
-                                color: '#F58158',
-                            },
-                        ],
-                        false
-                    ),
-                    width: 2,
-                },
-                // 线
-                data: [
-                    {
-                        coords: [
-                            [250, 850],
-                            [250, 600],
-                        ],
-                        lineStyle: {curveness: 0},
-                    },
-                    {
-                        coords: [
-                            [250, 600],
-                            [250, 500],
-                        ],
-                        lineStyle: {curveness: 0},
-                    },
-                    {
-                        coords: [
-                            [250, 500],
-                            [250, 350],
-                        ],
-                        lineStyle: {curveness: 0},
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 1000],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 970],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 940],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 910],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 880],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 850],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 820],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 790],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 760],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 730],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 700],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 850],
-                            [650, 670],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 600],
-                            [650, 620],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 600],
-                            [650, 590],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 600],
-                            [650, 560],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 500],
-                            [650, 510],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 500],
-                            [650, 480],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 350],
-                            [650, 370],
-                        ],
-                    },
-                    {
-                        coords: [
-                            [250, 350],
-                            [650, 340],
-                        ],
-                    },
-                ],
-            },
-        ],
-        animationDuration: 5000,
-        animationDelay: 500,
-    };
-
-    chart_1_option && chart_1.setOption(chart_1_option);
-    chart_2_option && chart_2.setOption(chart_2_option);
-    chart_3_option && chart_3.setOption(chart_3_option);
-    chart_4_option && chart_4.setOption(chart_4_option);
-    chart_5_option && chart_5.setOption(chart_5_option);
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $().UItoTop({easingType: 'easeOutQuart'});
-    });
-</script>
-<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/init.js"></script>
 </body>
+
 </html>
