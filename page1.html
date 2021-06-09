@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>首页 | 从背上书包到拿起屠刀，未成年犯罪几时休？</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/echarts.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/logo-dog.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/ico/logo-dog.png">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/background_2.jpg"
+            ], {
+                duration: 5000,
+                fade: 500
+            });
+
+
+        });
+    </script>
+
+
+</head>
+<!--/head-->
+
+<body>
+<div id="preloader"></div>
+<header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+    <div id="search-wrapper">
+        <div class="container">
+            <input id="search-box" placeholder="Search">
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <h1><span class="bounce-in"><img src="images/ico/logo-dog.png" width="30px" height="30px"> </span>童模的异色世界
+                </h1>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="page1.html">红色</a></li>
+                <li><a href="page2.html">灰色</a></li>
+                <li><a href="page3.html">彩色</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="page1.html">红色</a></li>
+                        <li><a href="page2.html">灰色</a></li>
+                        <li><a href="page3.html">彩色</a></li>
+                        <li class="active"><a href="page-another.html">敬请期待</a></li>
+                    </ul>
+                </li>
+                <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--/header-->
+
+<section id="single-page-slider" class="no-margin">
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="carousel-content centered center gap fade-down">
+                                <p style="font-size: 24px;">“主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。</p>
+                                <p style="font-size: 24px;">即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。”</p>
+                                <p style="font-size: 24px;">——罗翔</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="content-wrapper">
+
+    <section id="about-us" class="white">
+        <div class="container" style="margin-top: -5rem;">
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">审判：让边界划在自由腾飞前</h2>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 fade-up">
+                    <div>
+                        <p>我们首先根据这6479个案例进行了初步统计。</p>
+                        <p>相关数据显示，从2000年到2015年，由于社会大环境越来越重视“法治”，再加上媒体传播观念的不断改进，使得未成年犯罪案件数量总体呈递增趋势。</p>
+                        <p>但之后随着未成年犯罪的社会关注度变高，惩治和教育的相关措施不断完善，未成年刑事犯罪案件的数量在2015年之后逐年降低。</p>
+                        <div class="center">
+                            <div id="chart_1" style="height: 500px; width: 100%"></div>
+                            <span>请将鼠标放置到图中查看数据</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+<section id="stats" class="divider-section">
+    <div class="gap"></div>
+    <div class="container">
+        <div class="row col-md-12 fade-up">
+            <div id="mt" style="width:58%;height: 360px; float: left;">
+
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChart = echarts.init(document.getElementById('mt'));
+
+                    // 指定图表的配置项和数据
+                    var data = [
+                        [
+                            [0.5, 881, 881000000, '881 ♂', "男"],
+                            [1, 590, 590000000, '590 ♂', "男"],
+                            [2, 315, 315000000, '315 ♂', "男"],
+                            [3, 241, 241000000, '241 ♂', "男"],
+                            [4, 228, 228000000, '228 ♂', "男"],
+                            [5, 239, 239000000, '239 ♂', "男"],
+                            [6, 147, 147000000, '147 ♂', "男"],
+                            [7, 73, 73000000, '73 ♂', "男"],
+                            [8, 52, 52000000, '52 ♂', "男"],
+                            [9, 30, 30000000, '30 ♂', "男"],
+                            [10, 22, 22000000, '22 ♂', "男"],
+                            [11, 15, 15000000, '15 ♂', "男"],
+                            [12, 10, 10000000, '30 ♂', "男"]
+
+                        ],
+                        [
+                            [0.5, 536, 536000000, '536 ♀', "女"],
+                            [1, 537, 537000000, '537 ♀', "女"],
+                            [2, 377, 377000000, '377 ♀', "女"],
+                            [3, 382, 382000000, '382 ♀', "女"],
+                            [4, 358, 358000000, '358 ♀', "女"],
+                            [5, 313, 313000000, '313 ♀', "女"],
+                            [6, 216, 216000000, '216 ♀', "女"],
+                            [7, 117, 117000000, '117 ♀', "女"],
+                            [8, 78, 78000000, '78 ♀', "女"],
+                            [9, 67, 67000000, '67 ♀', "女"],
+                            [10, 55, 55000000, '55 ♀', "女"],
+                            [11, 56, 56000000, '56 ♀', "女"],
+                            [12, 61, 61000000, '61 ♀', "女"]
+
+                        ]
+                    ];
+
+                    option = {
+
+                        title: {
+                            text: '童模性别及入行年龄分布散点图',
+                            textStyle: {
+                                color: "#f5f5f5"
+                            }
+                        },
+                        legend: {
+                            right: 10,
+                            data: ['男', '女'],
+                            textStyle: {
+                                fontSize: 18, //字体大小
+                                color: '#ffffff' //字体颜色
+                            },
+
+                        },
+                        xAxis: {
+                            splitLine: {
+                                show: false
+                            }, //x轴网格 是否显示
+
+
+                            name: '年龄', //x轴描述   x轴名称
+                            axisLabel: {
+                                show: true,
+                                textStyle: {
+                                    color: 'white', //x轴data 的颜色
+                                    fontSize: 6 // 让字体变大
+                                }
+                            },
+                            nameTextStyle: {
+                                color: 'white' //x轴名称的 颜色
+                            },
+
+                            axisLine: {
+                                symbol: ['none', 'arrow'], //是否显示 箭头
+                                lineStyle: {
+                                    color: 'white', //x轴颜色
+                                }
+                            }
+
+                        },
+
+                        yAxis: {
+                            splitLine: {
+                                show: false
+                            }, //x轴网格 是否显示
+
+
+                            name: '数量', //x轴描述   x轴名称
+                            axisLabel: {
+                                show: true,
+                                textStyle: {
+                                    color: 'white', //x轴data 的颜色
+                                    fontSize: 10 // 让字体变大
+                                }
+                            },
+                            nameTextStyle: {
+                                color: 'white' //x轴名称的 颜色
+                            },
+
+                            axisLine: {
+                                symbol: ['none', 'arrow'], //是否显示 箭头
+                                lineStyle: {
+                                    color: 'white', //x轴颜色
+                                }
+                            }
+                        },
+                        series: [{
+                            name: '男',
+                            data: data[0],
+                            type: 'scatter',
+                            symbolSize: function (data) {
+                                return Math.sqrt(data[2]) / 5e2;
+                            },
+                            label: {
+                                emphasis: {
+                                    show: true,
+                                    formatter: function (param) {
+                                        return param.data[3];
+                                    },
+                                    color: "#ffffff",
+                                    position: 'top'
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    shadowBlur: 10,
+                                    shadowColor: '#F5F5F500',
+                                    shadowOffsetY: 5,
+                                    color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                                        offset: 0,
+                                        color: '#F5F5F5'
+                                    }, {
+                                        offset: 1,
+                                        color: '#F5F5F5'
+                                    }])
+                                }
+                            }
+                        }, {
+                            name: '女',
+                            data: data[1],
+                            type: 'scatter',
+                            symbolSize: function (data) {
+                                return Math.sqrt(data[2]) / 5e2;
+                            },
+                            label: {
+                                emphasis: {
+                                    show: true,
+                                    formatter: function (param) {
+                                        return param.data[3];
+                                    },
+                                    color: "#ffffff",
+                                    position: 'top'
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    shadowBlur: 10,
+                                    shadowColor: '#c43f3100',
+                                    shadowOffsetY: 5,
+                                    color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                                        offset: 0,
+                                        color: '#f9a69b'
+                                    }, {
+                                        offset: 1,
+                                        color: '#c43f31'
+                                    }])
+                                }
+                            }
+                        }]
+                    };
+                    myChart.setOption(option);
+                </script>
+                <p style="font-size: 6px;">数据来源：宝贝模特网童模数据</p>
+            </div>
+
+            <div class=" test test-1" style="width:40%;height: 300px; float: right;">
+                <div class="scrollbar" style="width:100%;">
+                    <p style="line-height: 4rem;">宝贝模特网，一家在网上拥有<span
+                            style="color: #c43f31;font-weight: bold;">6074</span>个注册用户和<span
+                            style="color: #c43f31;font-weight: bold;">3090</span>个商业通告的童模网站印证了她的说法。在该网站上，在各种影视与平面拍摄的通告中，1岁以下的童模需求量位居第三，占比13%。
+                    </p>
+                    <p>&nbsp;</p>
+                    <p style="line-height: 4rem;">
+                        正是因为市场需求庞大，不少父母趁着孩子尚小，就纷纷把孩子往童模圈里送。据统计，童模的入行年龄集中在2岁以下。其中，入行年龄为<span
+                            style=" color: #c43f31;font-weight: bold; ">6-12</span>个月的童模数量排到了<span
+                            style="color: #c43f31;font-weight: bold; ">第二</span>，占比<span
+                            style="color: #c43f31;font-weight: bold; ">17%</span>，而入行年龄为
+                        <span style="color: #c43f31;font-weight: bold; ">0-6</span>个月的童模数量占到了<span
+                            style="color: #c43f31;font-weight: bold; ">6.27%</span>。
+
+                    </p>
+                    <p>&nbsp;</p>
+                    <p style="line-height: 4rem; ">不足岁就被送去当童模是什么概念呢？玲姐告诉我们，在云云8-9个月的时候，摄影师在拍照时就已经会打开闪光灯了。</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="about-us " class="white ">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-12 fade-up ">
+                <p>《中国眼镜科技杂志》指出：黄斑区是人眼最重要的区域，位于视网膜中。它是构成视觉能力的核心区域, 也是光敏感度最高和最脆弱的区域, 直到4岁左右才能发育完全。<span
+                        style="font-weight: bold; ">包括闪光灯在内的强光会使孩子的黄斑区被灼伤，并潜在无法修复的风险。</span></p>
+
+                <p>闪光灯对视力将会产生的损害，是大多数低龄童模所无法避免的问题。在这背后，是更多从“围墙外“涌进来的低龄童模家长，他们在用好奇心不断地触碰那条年龄的红色警戒线。
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="gap "></div>
+        <div class="centerfade-down section-heading center ">
+            <h2 class="main-title "><span style="color: #c43f31;">深红的恐惧</span></h2>
+            <hr>
+            <p>拍摄中存在的伤害和不合理比比皆是</p>
+        </div>
+        <div class="gap "></div>
+        <div class="row ">
+            <div class="col-md-12 fade-up ">
+                <p><span style="font-size: 25px;font-weight: bolder; ">透支的人生</span></p>
+                <p>
+                    玲姐涉足童模圈已八年有多，谈及有些在“围墙内“的家长，她表示嗤之以鼻。”我认识一个小孩在广州这边做童模的家长。有一次，我深夜十二点还能看到她在朋友圈分享小孩正在拍摄的动态。后来我私下见过这个小孩，她可能是经常做头发，发尾都分叉了，头发也很干枯。小孩才十岁，脸上就挂着两个大大的眼袋，皮肤也很差。”
+                    <br><span
+                        style="font-weight: bold; ">超长的拍摄时长，并不是让小孩单纯地面对摄像机十多个小时这么简单，它往往在透支着一个孩子未来几十年的人生。</span></p>
+
+                <p> 在宝贝模特网上我们就发现，对儿童有高时长工作需求的童模通告（即4小时以上工作时长）占到了所有通告的<span
+                        style="color: #c43f31;font-weight: bold; ">32.87%</span>，对儿童有超长时长工作需求的童模通告（即10小时以上工作时长）占到了所有通告的<span
+                        style="color: #c43f31;font-weight: bold; ">28.45%</span>。
+                </p>
+            </div>
+        </div>
+
+        <div id="meet-the-team " class="row col-md-12 fade-down " style="margin-top: 5rem; ">
+            <div class="fade-down center ">
+                <img src="images/team/ertong1.png " width="90% " height="100% ">
+            </div>
+        </div>
+
+        <div class="row col-md-12 fade-up " style="margin-top: 10rem; ">
+            <p>另外，高时长的童模公告大多集中在影视拍摄通告中。在这些通告里，存在一个行话“X”，意思是需要儿童连续拍摄至少十个小时。</p>
+        </div>
+
+        <!--/#meet-the-team-->
+
+        <div class="gap "></div>
+        <div class="row ">
+            <div class="col-md-12 fade-up " style="margin-top: 5rem; ">
+                <p><span style="font-size: 25px;font-weight: bolder; ">连轴转的小机器人</span></p>
+                <p>
+                    玲姐给我们解释道，一次通告时长虽然看起来不高，但是如果是专门给淘宝电商走量的拍摄通告，那些父母都会带着孩子跑上3、4个通告，按一个通告4小时算起，一天下来孩子也要在摄像机前待上十多个小时。 </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="stats " class="divider-section ">
+    <div class="container ">
+        <div class="row fade-up ">
+            <div style="width:60%;float: left;">
+                <img src="images/team/ertong4.gif" width="100%"></div>
+            <div style="width:30%;float: right; margin-top:5rem ;">
+                <p>“或许，你知道杭州织里吗？”</p>
+                <p>杭州织里是玲姐从不敢涉猎的领域，在那里，许多孩子一天连轴转十多个小时，往往衣服左手穿进去，摆个pose，右手又脱出来了。没有商家要求孩子一天接多少单，衣服往往是按件计算的，
+                    但是很多父母为了多赚钱都会要求孩子多拍。玲姐形容那些孩子像“机器人“。她的朋友曾经带着孩子在那里拍过照，一件衣服
+                    <span style="color: #c43f31;font-weight: bold; ">100</span>块，孩子一天拍上<span
+                            style="color: #c43f31;font-weight: bold; ">100</span>套，
+                    完全就是把孩子当成衣架子。拍过一次后，她的朋友扬言再也不想去这个地方了
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about-us " class="white ">
+    <div class="container ">
+        <div class="gap "></div>
+        <div class="row ">
+            <div class="col-md-12 fade-up ">
+
+                <p>
+                    云云在旁边瞪着大大的眼睛，嘴里念叨着：“我就很讨厌拍很多衣服。那次拍摄，那些叔叔就说让我乖点，否则就要给我加衣服……我讨厌他们……“一种不知名的恐惧从小孩的明眸中间晕染开，孩子的眼睛刹那间变得暗淡下来。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="gap "></div>
+        <div class="row ">
+            <div class="col-md-12 fade-up ">
+                <p><span style="font-size: 25px;font-weight: bolder; ">衣服下的寒冬酷暑</span></p>
+                <p>被问及还有不喜欢什么的时候，云云的神色开始变得局促不安起来。
+                    <br>“热……让人很难受。“
+                    <br>那是云云在哈尔滨拍摄羽绒服的经历。八月份的哈尔滨温度依然居高不下，云云在持续高温的天气下穿着羽绒服，断断续续拍摄了<b>九个小时</b>，衣服脱下时早已汗流浃背。说起那段经历，云云依然心有余悸。
+                </p>
+            </div>
+        </div>
+
+        <div id="ma" style="width:100%;height:30rem">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('ma'));
+
+                // 指定图表的配置项和数据
+                var option = {
+                    title: {
+                        text: '童模反季拍摄占比图',
+                        color: '#000000',
+                        subtext: '数据来源：宝贝模特网通告数据',
+                        x: 'center'
+                    },
+                    textStyle: {
+                        fontWeight: 'normal', //标题颜色
+                        color: '#000000'
+                    },
+
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        x: 'center',
+                        y: 'bottom',
+                        data: [{
+                            name: '春夏拍摄',
+                            textStyle: {
+                                color: "#000000"
+                            }
+                        }, {
+                            name: '春夏反季',
+                            textStyle: {
+                                color: "#000000"
+                            }
+                        }, {
+                            name: '秋冬拍摄',
+                            textStyle: {
+                                color: "#000000"
+                            }
+                        }, {
+                            name: '秋冬反季',
+                            textStyle: {
+                                color: "#000000"
+                            }
+                        },]
+                    },
+                    toolbox: {
+                        show: true,
+                        feature: {
+                            mark: {
+                                show: true
+                            },
+                            dataView: {
+                                show: true,
+                                readOnly: false
+                            },
+                            magicType: {
+                                show: true,
+                                type: ['pie', 'funnel']
+                            },
+                            restore: {
+                                show: true
+                            },
+                            saveAsImage: {
+                                show: true
+                            }
+                        }
+                    },
+                    color: ['#f9a69b', '#c43f31', '#374e9b', '#aecbf4'], //颜色将根据饼图的区域个数循环
+                    data: [{
+                        value: 80,
+                        name: '春夏拍摄'
+                    }, {
+                        value: 20,
+                        name: '春夏反季'
+                    }, {
+                        value: 80,
+                        name: '秋冬拍摄'
+                    }, {
+                        value: 20,
+                        name: '秋冬反季'
+                    },
+
+                    ],
+
+                    calculable: true,
+                    series: [{
+                        name: '反季拍摄',
+                        type: 'pie',
+                        radius: [30, 110],
+                        center: ['25%', '50%'],
+                        roseType: 'radius',
+                        label: {
+                            normal: {
+                                show: false
+                            },
+                            emphasis: {
+                                show: true
+                            }
+                        },
+                        lableLine: {
+                            normal: {
+                                show: false
+                            },
+                            emphasis: {
+                                show: true
+                            }
+                        },
+                        data: [{
+                            value: 73.6,
+                            name: '春夏拍摄'
+                        }, {
+                            value: 26.4,
+                            name: '春夏反季'
+                        }]
+                    }, {
+                        name: '反季拍摄',
+                        type: 'pie',
+                        radius: [30, 110],
+                        center: ['75%', '50%'],
+                        roseType: 'radius',
+                        label: {
+                            normal: {
+                                show: false
+                            },
+                            emphasis: {
+                                show: true
+                            }
+                        },
+                        lableLine: {
+                            normal: {
+                                show: false
+                            },
+                            emphasis: {
+                                show: true
+                            }
+                        },
+                        data: [{
+                            value: 30.8,
+                            name: '秋冬反季'
+                        }, {
+                            value: 69.2,
+                            name: '秋冬拍摄'
+                        }]
+                    }]
+                };
+                myChart.setOption(option);
+            </script>
+        </div>
+        <div class="row" style="margin-top: 5rem;">
+            <div class="col-md-12  fade-up">
+                <p><span style="font-weight: bold;"> 事实上，反季拍摄也往往是许多孩子的噩梦。</span>
+                    尽管摄影棚会有专门的温度调适设施，但是还是难以阻挡室外温度对室内温度的寝室。在宝贝模特网上，在明确表明服装要求的通告中，要求在春夏季拍摄秋冬装的通告占了
+                    <span style="color: #c44031;font-weight: bold;">30.8%</span>的比例，而要求在秋冬季拍摄春夏装的通告占了<span
+                            style="color: #c43f31;font-weight: bold;">26.4%</span>的比例。
+                    <span style="font-weight: bold;">
+                                    平均下来，要求反季拍摄的通告比例几乎达到了三分之一的水平，这对孩子稚嫩的身体而言是难以承受的折磨。</span></p>
+                <p>通告往往是可叠加的，当父母在不加筛选的情况下，把孩子同时置于超长拍摄时长，超多拍摄件数和反季拍摄的境地，对于孩子而言只会是一种不断深化的痛苦和恐惧。 </p>
+                <p><span
+                        style="font-weight: bold;">然而数据显示，童模的注册地区大多集中于北上广和浙江，这些来自经济发达地区的孩子，他们的家长真的对钱有如此紧急的需求吗？</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="stats" class="divider-section">
+    <div class="row" style="margin-top: 1rem;">
+        <p align="center" style="font-size: 5rem;">童模来源地区分布图</p>
+        <div class="center" style="width: 100%;height: 60rem;margin-top: 1rem;">
+            <iframe style="width: 100%;height: 100%;"
+                    src="https://maplab.amap.com/share/mapv/28d4f120235bf99d71a16c537e9211cd"></iframe>
+        </div>
+        <p align="right" style="margin-right: 3rem;">数据来源：宝贝模特网童模数据</p>
+    </div>
+
+</section>
+
+</div>
+
+<div id="footer-wrapper">
+    <section id="bottom" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 center">
+
+                    <p>说到底，童模能否摆脱红色的出境关键在于他们的父母能否走出灰色的“捞金诱惑”。</p>
+                    <hr width="60%" size="1px">
+                    <h4 style="font-size: 48px;"><span class="hui"><a class="hui" href="page2.html"> 灰&nbsp;&nbsp;色</a></span>
+                    </h4>
+                </div>
+                <!--/.col-md-3-->
+            </div>
+        </div>
+    </section>
+    <!--/#bottom-->
+
+    <footer id="footer" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    &copy; 2020 童模的异色世界.
+                </div>
+                <div class="col-sm-4">
+                    <ul class="pull-right">
+                        <li><a id="gototop" class="gototop" href="page2.html"><i class="fa fa-chevron-up"></i></a></li>
+                        <!--#gototop-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+</div>
+
+<script>
+    //  图1所用年份
+    let years = []
+    for (let i = 2001; i <= 2019; ++i) {
+        years.push(i);
+    }
+
+    const chart_1 = echarts.init($("#chart_1")[0]);
+
+    // 图表1选项
+    const chart_1_option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {          // 坐标轴指示器，坐标轴触发有效
+                type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
+            },
+        },
+        xAxis: {
+            type: 'category',
+            data: years,
+            axisTick: {
+                alignWithLabel: true,
+            }
+        },
+        yAxis: {
+            type: 'value',
+        },
+        series: [{
+            data: [1, 1, 11, 11, 21, 89, 32, 48, 231, 256, 415, 444, 530, 834, 861, 799, 685, 573,
+                566,
+            ],
+            type: 'line',
+            smooth: true
+        }]
+    };
+
+    chart_1_option && chart_1.setOption(chart_1_option);
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/init.js"></script>
+</body>
+
+</html>
