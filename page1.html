@@ -66,11 +66,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="my-title carousel-content centered center gap fade-down">
-                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。
+                                <p style="color: white"><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;主张未达刑事责任能力的人不负刑事责任，看似是对儿童的关心，但却放弃了对被害人的保护之责。
                                 </p>
-                                <p>即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。&nbsp;<i
+                                <p style="color: white">即便未成年人犯罪也应该对其进行必要的惩罚，在惩罚的基础上才能够去谈改造。&nbsp;<i
                                         class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                <p class="my-title-author">——罗翔</p>
+                                <p style="color:#C78B94;" class="my-title-author">——罗翔</p>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
     </section>
 
     <section class="divider-section my-no_block">
-        <div class="my-block col-md-4 col-md-offset-1 fade-down">
+        <div style="text-indent: 2em" class="my-block col-md-4 col-md-offset-1 fade-down">
             <br/>
             <p>一般实施犯罪的未成年人处在未成年到成年的过渡阶段，思想和行为较幼年的依赖心理已经变得相对独立和成熟。</p>
             <br/>
@@ -170,11 +170,11 @@
     <section class="divider-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 fade-down">
+                <div style="text-indent: 2em" class="col-md-4 fade-down">
                     <br/><br/>
                     <p>其中涉事案件的犯罪金额多在一万元以下，呈现金额小的案件数量多这样的反比关系。</p>
-                    <p> 这说明，未成年人犯罪案件中，涉事金额相对较小，作案规模大部分来说不算庞大，处于相对较控制的阶段，对社会的危害相对在可控范围内。</p>
-                    <p> 但我们不仅需要预防未成年犯罪的规模不断扩大，也要逐渐发力缩小未成年人犯罪的影响与数量。</p>
+                    <p>这说明，未成年人犯罪案件中，涉事金额相对较小，作案规模大部分来说不算庞大，处于相对较控制的阶段，对社会的危害相对在可控范围内。</p>
+                    <p>但我们不仅需要预防未成年犯罪的规模不断扩大，也要逐渐发力缩小未成年人犯罪的影响与数量。</p>
                 </div>
                 <div class="col-md-8 center fade-down">
                     <div id="chart_3" style="height: 500px;width: 100%"></div>
@@ -307,9 +307,6 @@
         echarts.registerMap('CN', geoJson);
 
         chart_2.setOption({
-            title: {
-                text: '案件地域分布',
-            },
             tooltip: {
                 trigger: 'item',
                 formatter: '{b}<br/>{c} (例)'
