@@ -230,7 +230,7 @@
         });
 
         const number = arg['data']['value'][2];
-        return `<div style="width: 400px; text-align: left; white-space: normal; margin: 15px;"><p>法条：${name}</p><p>频次: ${number} 次<p/><p>内容: </p><div style="text-indent: 2em;">>${content}</div></div>`;
+        return `<div style="width: 400px; text-align: left; white-space: normal; margin: 15px;"><p>法条：${name}</p><p>频次: ${number} 次<p/><p>内容: </p><div style="text-indent: 2em;">${content}</div></div>`;
     }
 
     // 图表对象
@@ -512,6 +512,7 @@
                         value: [650, 480, 536],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
                             formatter: params => lawsFormatter(
                                 params,
@@ -533,6 +534,7 @@
                         value: [650, 370, 586],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
                             formatter: params => lawsFormatter(
                                 params,
@@ -545,6 +547,7 @@
                         value: [650, 340, 465],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
                             formatter: params => lawsFormatter(
                                 params,
