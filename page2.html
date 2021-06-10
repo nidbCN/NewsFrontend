@@ -513,9 +513,10 @@
                         symbolSize: 15,
                         tooltip: {
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "共同犯罪是指二人以上共同故意犯罪。"
+                            ),
                         },
                     },
                     {
@@ -533,9 +534,10 @@
                         symbolSize: 15,
                         tooltip: {
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "已满十四周岁不满十八周岁的人犯罪，应当从轻或者减轻处罚。"
+                            ),
                         },
                     },
                     {
@@ -544,9 +546,10 @@
                         symbolSize: 15,
                         tooltip: {
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "已满十六周岁的人犯罪，应当负刑事责任。"
+                            ),
                         },
                     },
                 ],
