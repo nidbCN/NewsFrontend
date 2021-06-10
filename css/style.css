@@ -20,12 +20,14 @@ p {
 }
 
 .my-title p {
-    color: #AF9C4A;
+    color: #CD5656;
+    font-weight: bold;
     font-size: 24px;
 }
 
 .my-title-author {
-    color: #C78B94;
+    color: #CD5656;
+    font-weight: bold;
     font-size: 22px;
 }
 
