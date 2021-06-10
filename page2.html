@@ -220,6 +220,19 @@
 </div>
 
 <script>
+    function lawsFormatter(arg, str) {
+        const name = arg['data']['name']
+        let content = "";
+        const content_list = str.split('\n');
+
+        content_list.forEach(item => {
+            content += `<p>${item}</p>`
+        });
+
+        const number = arg['data']['value'][2];
+        return `<div style="width: 400px; text-align: left; white-space: normal; margin: 15px;"><p>法条：${name}</p><p>频次: ${number} 次<p/><p>内容: </p><div style="text-indent: 2em;">>${content}</div></div>`;
+    }
+
     // 图表对象
     const chart_1 = echarts.init($("#chart_1")[0]);
 
@@ -272,10 +285,12 @@
                         value: [650, 1000, 1350],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "已满十四周岁不满十八周岁的人犯罪，应当从轻或者减轻处罚。"
+                            ),
                         },
                     },
                     {
@@ -283,10 +298,12 @@
                         value: [650, 970, 1193],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "共同犯罪是指二人以上共同故意犯罪。"
+                            ),
                         },
                     },
                     {
@@ -294,10 +311,12 @@
                         value: [650, 940, 1036],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "犯罪嫌疑人虽不具有前两款规定的自首情节，但是如实供述自己罪行的，可以从轻处罚；因其如实供述自己罪行，避免特别严重后果发生的，可以减轻处罚。"
+                            ),
                         },
                     },
                     {
@@ -305,13 +324,12 @@
                         value: [650, 910, 1029],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次' + '<br/> <h3>第六十七条</h3>' +
-                                    '<p>【自首】犯罪以后自动投案，如实供述自己的罪行的，是自首。对于自首的犯罪分子，可以从轻或者减轻处罚。其中，犯罪较轻的，可以免除处罚。</p>' +
-                                    '<p>被采取强制措施的犯罪嫌疑人、被告人和正在服刑的罪犯，如实供述司法机关还未掌握的本人其他罪行的，以自首论。</p>' +
-                                    '<p>犯罪嫌疑人虽不具有前两款规定的自首情节，但是如实供述自己罪行的，可以从轻处罚；因其如实供述自己罪行，避免特别严重后果发生的，可以减轻处罚。</p>';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "已满十六周岁的人犯罪，应当负刑事责任。"
+                            ),
                         },
                     },
                     {
@@ -319,10 +337,12 @@
                         value: [650, 880, 859],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "判处罚金，应当根据犯罪情节决定罚金数额。"
+                            ),
                         },
                     },
                     {
@@ -330,10 +350,12 @@
                         value: [650, 850, 810],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "盗窃公私财物，数额较大的，或者多次盗窃、入户盗窃、携带凶器盗窃、扒窃的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金；数额巨大或者有其他严重情节的，处三年以上十年以下有期徒刑，并处罚金；数额特别巨大或者有其他特别严重情节的，处十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产。"
+                            ),
                         },
                     },
                     {
@@ -341,10 +363,12 @@
                         value: [650, 820, 684],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "罚金在判决指定的期限内一次或者分期缴纳。期满不缴纳的，强制缴纳。对于不能全部缴纳罚金的，人民法院在任何时候发现被执行人有可以执行的财产，应当随时追缴。如果由于遭遇不能抗拒的灾祸缴纳确实有困难的，可以酌情减少或者免除。"
+                            ),
                         },
                     },
                     {
@@ -352,10 +376,12 @@
                         value: [650, 790, 603],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "犯罪分子违法所得的一切财物，应当予以追缴或者责令退赔；对被害人的合法财产，应当及时返还；违禁品和供犯罪所用的本人财物，应当予以没收。没收的财物和罚金，一律上缴国库，不得挪用和自行处理。"
+                            ),
                         },
                     },
                     {
@@ -363,10 +389,12 @@
                         value: [650, 760, 601],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "组织、领导犯罪集团进行犯罪活动的或者在共同犯罪中起主要作用的，是主犯。"
+                            ),
                         },
                     },
                     {
@@ -374,10 +402,13 @@
                         value: [650, 730, 547],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "在共同犯罪中起次要或者辅助作用的，是从犯。\n" +
+                                "对于从犯，应当从轻、减轻处罚或者免除处罚。\n"
+                            ),
                         },
                     },
                     {
@@ -385,10 +416,12 @@
                         value: [650, 700, 527],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "犯罪以后自动投案，如实供述自己的罪行的，是自首。对于自首的犯罪分子，可以从轻或者减轻处罚。其中，犯罪较轻的，可以免除处罚。"
+                            ),
                         },
                     },
                     {
@@ -396,10 +429,12 @@
                         value: [650, 670, 516],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "对于第三款规定以外的主犯，应当按照其所参与的或者组织、指挥的全部犯罪处罚。"
+                            ),
                         },
                     },
                     {
@@ -416,10 +451,12 @@
                         value: [650, 620, 827],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "犯罪嫌疑人虽不具有前两款规定的自首情节，但是如实供述自己罪行的，可以从轻处罚；因其如实供述自己罪行，避免特别严重后果发生的，可以减轻处罚。"
+                            ),
                         },
                     },
                     {
@@ -427,10 +464,12 @@
                         value: [650, 590, 625],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "已满十四周岁不满十八周岁的人犯罪，应当从轻或者减轻处罚。"
+                            ),
                         },
                     },
                     {
@@ -438,10 +477,12 @@
                         value: [650, 560, 594],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "共同犯罪是指二人以上共同故意犯罪。"
+                            ),
                         },
                     },
                     {
@@ -458,10 +499,12 @@
                         value: [650, 510, 708],
                         symbolSize: 15,
                         tooltip: {
+                            position: 'bottom',
                             show: true,
-                            formatter: function (params) {
-                                return params['data']['value'][2] + '次';
-                            },
+                            formatter: params => lawsFormatter(
+                                params,
+                                "犯罪嫌疑人虽不具有前两款规定的自首情节，但是如实供述自己罪行的，可以从轻处罚；因其如实供述自己罪行，避免特别严重后果发生的，可以减轻处罚。"
+                            ),
                         },
                     },
                     {
