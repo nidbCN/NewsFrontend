@@ -132,7 +132,7 @@
                         <p>从刑事案例的地域分布状况来看，当前刑事案例主要集中在湖南省、广东省和河南省。分别占比13.24％、9.21％和6.85％。</p>
                         <p>其中湖南省案件数量最多，达到了858件。</p>
                     </div>
-                    <div style="height: 500px" id="chart_2"></div>
+                    <div style="height: 700px" id="chart_2"></div>
                     <span>请将鼠标放置到图中查看数据</span><br/>
                 </div>
 
@@ -267,6 +267,12 @@
         colorPointer['b'] -= 1.5;
     }
 
+    // inner map
+    const map_url = 'map/CN.json';
+
+    // ali map
+    // const map_url = 'https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json';
+
     // 图表对象
     const chart_1 = echarts.init($("#chart_1")[0]);
     const chart_2 = echarts.init($("#chart_2")[0]);
@@ -300,7 +306,7 @@
             smooth: true
         }]
     };
-    $.get('map/CN.json', function (geoJson) {
+    $.get(map_url, function (geoJson) {
         chart_2.hideLoading();
 
         echarts.registerMap('CN', geoJson);
